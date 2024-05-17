@@ -5,15 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Watch Shop Landing Page</title>
     <link href="./css/watch.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@100;300;400;500;700;900&family=Bebas+Neue&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Audiowide&display=swap"
+      rel="stylesheet"
+    />
 </head>
-<body>
+<body class="overflow-x-hidden bg-slate-900">
+
+    <!-- Navigation Bar -->
+    <nav class="py-9 px-4">
+        <div class="container mx-auto">
+            <div class="flex justify-between">
+                <img src="img/hero-image3.png" alt="Logo" class="w-20 h-10">
+                <ion-icon name="grid-outline" id="menu" class="text-3xl text-white md:hidden"></ion-icon>
+            </div>
+        </div>
+        <div id="nav-mobile" class="fixed bottom-0 right-0 left-0 bg-transparent p-4 border-t-2 rounded-3xl">
+            <ul class="flex justify-evenly items-center">
+                <li>
+                    <a href="" class="flex flex-col justify-center items-center">
+                        <ion-icon name="home-outline" class="text-2xl text-white"></ion-icon>
+                        <span class="text-white opacity-50 font-bold text-base font-poppins">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="flex flex-col justify-center items-center">
+                        <ion-icon name="menu-outline" class="text-2xl text-gray-600"></ion-icon>
+                        <span class="text-gray-600 opacity-50 font-bold text-base font-poppins">About</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="flex flex-col justify-center items-center">
+                        <ion-icon name="chatbox-outline" class="text-2xl text-gray-600"></ion-icon>
+                        <span class="text-gray-600 opacity-50 font-bold text-base font-poppins">Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End of Navigation Bar -->
+
     <!-- Hero Image -->
-    <section class="w-screen h-screen bg-slate-900 flex flex-col items-center justify-center">
-        <div class="flex flex-col items-center justify-center h-full">
+    <!-- <section class="w-screen h-screen flex flex-row ">
+        <div class="p-20 relative">
             <h1 class="text-6xl text-white font-bold">Watch Shop</h1>
             <p class="text-white text-lg">The best place to buy watches</p>
+            <hr class="block before:content-[''] before:w-40 before:h-20 before:absolute before:top-20 before:left-40 absolute left-10 mt-92 w-full opacity-60">
+            <hr class="absolute top-22 left-52 w-[170%] -rotate-[80deg] opacity-70">
         </div>
-        <img src="img/hero-image.png" alt="Watch Hero Image">  
-    </section>
+        <div class="relative">
+            <img src="img/hero-image.png" alt="Watch Hero Image" class="relative top-40 left-6 z-20 opacity-85">  
+            <img src="img/hero-image2.png" alt="Watch Hero Image" class="relative bottom-48 left-52 w-[85%] z-20 opacity-75">  
+        </div>
+    </section> -->
+    <!-- End of Hero Image -->
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
