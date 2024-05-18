@@ -1,5 +1,20 @@
-const menu = document.getElementById('menu');
-const navMobile = document.getElementById('nav-mobile');
+// Parallax Effect
+const buttonFindYours = document.getElementById("find_yours");
+const textWatch = document.querySelector(".text-watch");
+const textErs = document.querySelector(".text-ers");
+
+window.onscroll = () => {
+  let y = window.scrollY;
+  console.log(y);
+
+  buttonFindYours.style.transform = `translateX(-${y * 2.5}px)`;
+  textWatch.style.transform = `translateX(-${y * 1.5}px)`;
+  textErs.style.transform = `translateX(${y * 1.5}px)`;
+};
+
+// Mobile Navigation
+const menu = document.getElementById("menu");
+const navMobile = document.getElementById("nav-mobile");
 
 menu.addEventListener("click", () => {
   navMobile.classList.toggle("animated");

@@ -4,25 +4,28 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        sm: "350px",
-        // => @media (min-width: 350px) { ... }
+        sm: "400px",
+        // => @media (min-width: 400px) { ... }
 
-        md: "700px",
+        md: "721px",
         // => @media (min-width: 700px) { ... }
       },
       spacing: {
-        22: "5.5rem",
-        26: "6.5rem",
+        30 : "7.5rem",
+        68: "17rem",
         84: "21rem",
         88: "22rem",
         92: "23rem",
         98: "24.5rem",
         100: "25rem",
+        104: "26rem",
         120: "30rem",
-        124: "31rem",
-        128: "32rem",
-        132: "33rem",
-        134: "33.5rem",
+        125: "31.25rem",
+        130: "32.5rem",
+        140: "35rem",
+        160: "40rem",
+        200: "50rem",
+        240: "60rem",
       },
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],

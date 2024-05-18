@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  box-sizing: border-box;
+}
+
+.active {
+  color: white;
+  font-weight: bold;
+}
+
 .animated {
   transition: opacity 0.5s ease-in-out, height 0.5s ease-in-out;
 }
@@ -15,3 +24,24 @@
   opacity: 0;
   height: 0;
 }
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-5%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.5, 1);
+  }
+}
+
+.img-1 {
+  filter: drop-shadow(2px 3px 2px rgb(23, 176, 227));
+  filter: drop-shadow(2px 3px 2px #111827);
+}
+
+.img-2, .img-3 {
+  filter: drop-shadow(2px 3px 2px white);
+}
+
