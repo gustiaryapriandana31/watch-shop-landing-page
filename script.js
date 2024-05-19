@@ -52,7 +52,6 @@ buttons.forEach(function (button) {
 
       // Mengisi div dengan konten sesuai target
       watchs.innerHTML = watchContent.innerHTML;
-      watchs.classList.add("watch")
     } else {
       watchs.innerHTML = "Konten tidak ditemukan";
       watchs.style.color = "white";
