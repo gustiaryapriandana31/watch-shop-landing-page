@@ -4,6 +4,9 @@
 
 body {
   box-sizing: border-box;
+  max-width: 100%; 
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .active {
@@ -34,6 +37,10 @@ body {
     transform: translateY(0);
     animation-timing-function: cubic-bezier(0, 0, 0.5, 1);
   }
+}
+
+.choosed {
+  filter: drop-shadow(1px 1px 1px rgb(131, 216, 244));
 }
 
 .img-1 {

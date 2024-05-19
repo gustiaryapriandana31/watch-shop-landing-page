@@ -11,8 +11,12 @@ module.exports = {
         // => @media (min-width: 700px) { ... }
       },
       spacing: {
+        22: "5.5rem",
+        26: "6.5rem",
         30 : "7.5rem",
         68: "17rem",
+        76: "19rem",
+        82: "20.5rem",
         84: "21rem",
         88: "22rem",
         92: "23rem",

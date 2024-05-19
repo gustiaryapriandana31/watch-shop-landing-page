@@ -12,19 +12,19 @@
       rel="stylesheet"
     />
 </head>
-<body class="overflow-x-hidden h-[1000px]">
+<body class="overflow-x-hidden h-[1000px] box-sizing-border">
     
     <!-- Navigation Bar -->
-    <nav class="absolute top-0 left-0 w-full items-center z-10 text-black bg-white/20">
+    <!-- <nav class="absolute top-0 left-0 w-full items-center z-10 text-black bg-white/20">
         <div class="mx-auto">
             <div class="flex justify-between items-center bg-white/10 p-2">
                 <img src="img/hero-image3.png" alt="Logo" class="w-20 h-10">
                 <ion-icon id="menu" name="menu-outline" class="text-2xl text-white sm:hidden"></ion-icon>
                 <div class="hidden mr-4 md:mr-12 sm:block">
                     <ul class="flex gap-5 md:gap-8 text-slate-400 font-roboto-mono text-sm lg:text-lg lg:gap-20">
-                        <li class="active">Home</li>
-                        <li>About</li>
-                        <li>Contact</li>
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#introduce">About</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -32,30 +32,30 @@
         <div id="nav-mobile" class="fixed -bottom-2 right-0 left-0 bg-transparent p-3 border-t-[1px] rounded-t-3xl sm:hidden">
             <ul class="flex justify-evenly gap-8 items-center">
                 <li>
-                    <a href="" class="flex flex-col justify-center items-center active">
+                    <a href="#" class="flex flex-col justify-center items-center active">
                         <ion-icon name="home-outline" class="text-lg"></ion-icon>
                         <span class="opacity-40 font-bold text-[10px] font-roboto-mono">Home</span>
                     </a>
                 </li>
                 <li>
-                    <a href="" class="flex flex-col justify-center items-center">
+                    <a href="#introduce" class="flex flex-col justify-center items-center">
                         <ion-icon name="settings-outline" class="text-lg text-gray-600"></ion-icon>
                         <span class="text-gray-600 opacity-40 font-bold text-[10px] font-roboto-mono">About</span>
                     </a>
                 </li>
                 <li>
-                    <a href="" class="flex flex-col justify-center items-center">
+                    <a href="#" class="flex flex-col justify-center items-center">
                         <ion-icon name="chatbox-outline" class="text-lg text-gray-600"></ion-icon>
                         <span class="text-gray-600 opacity-40 font-bold text-[10px] font-roboto-mono">Contact</span>
                     </a>
                 </li>
             </ul>
         </div>
-    </nav>
+    </nav> -->
     <!-- End of Navigation Bar -->
         
     <!-- Hero Image -->
-    <section class="md:flex md:flex-row p-2 md:h-screen bg-gradient-to-br from-blue-950 via-slate-700 to-slate-950">
+    <!-- <section class="md:flex md:flex-row p-2 md:h-screen bg-gradient-to-br from-blue-950 via-slate-700 to-slate-950">
         <div class="relative z-20 opacity-90 grow basis-1/2">
             <h1 class="text-7xl text-white font-bold text-start mt-36 font-serif ml-20 hidden md:block">WATCHERS</h1>
             <h3 class="fixed w-2/3 ml-14 text-2xl -mt-44 text-orange-400 font-bold text-center font-poppins md:static md:text-start md:text-xl md:mt-2 md:ml-24">Something Which's you want</h3>
@@ -71,19 +71,89 @@
         </div>
 
         <div class="relative z-10 grow basis-1/2 ">   
-            <img src="img/hero-image.png" alt="Watch Hero Image" class="img-1 block fixed bottom-56 -left-12 animate-bounce md:absolute  md:-left-24 md:top-40 opacity-85">  
+            <img src="img/hero-image.png" alt="Watch Hero Image" class="img-1 fixed bottom-56 -left-12 animate-bounce md:absolute  md:-left-24 md:top-40 opacity-85">  
             <img src="img/hero-image2.png" alt="Watch Hero Image" class="img-2 hidden animate-bounce md:absolute md:top-44 md:left-24 md:w-[85%] md:opacity-90 md:block">  
-            <img src="img/hero-image5.png" alt="Watch Hero Image" class="img-3 block fixed z-10 top-56 left-20 animate-bounce md:hidden "> 
+            <img src="img/hero-image5.png" alt="Watch Hero Image" class="img-3 fixed z-10 top-56 left-20 animate-bounce md:hidden "> 
         </div>
-     
-    </section>
-
-    <section class="bg-gray-900">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#273036" fill-opacity="1" d="M0,320L0,128L360,128L360,96L720,96L720,64L1080,64L1080,160L1440,160L1440,320L1080,320L1080,320L720,320L720,320L360,320L360,320L0,320L0,320Z"></path></svg>
-    </section>
-
+    </section> -->
     <!-- End of Hero Image -->
 
+
+    <!-- Watch Features -->
+    <section id="introduce" class="font-roboto bg-gray-900 h-screen flex flex-row justify-center items-center relative">
+         <div class="p-2">
+            <img src="img/hero-image3.png" alt="Watch Image" class="md:block hidden">
+            <img src="img/mobile-watch.png" alt="Watch Image" class="md:hidden block">
+        </div>
+
+        <h2 class="text-center absolute top-76 left-26 bg-white font-bold text-lg font-poppins w-6 h-6 opacity-95 cursor-pointer hover:scale- animate-pulse rounded-full md:top-56 md:left-[43%]">1</h2>
+        <article class="p-4 h-40 absolute top-[34%] z-20 left-0 bg-slate-800 text-white border-2 rounded-lg md:rounded-br-3xl md:w-1/4 md:bg-white md:text-black md:top-20 md:left-56">
+            <h1 class="float-right bg-slate-500 w-6 h-6 text-center rounded-full">X</h1>
+            <h4 class="text-center font-bold text-lg mb-2">1. Description</h4>
+            <p class="text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime reiciendis officia perferendis maiores optio nulla ullam quidem est, sit dignissimos.</p>  
+        </article>
+
+        <h2 class="text-center absolute bottom-76 left-26 bg-white font-bold text-lg font-poppins w-6 h-6 opacity-95 cursor-pointer hover:scale- animate-pulse rounded-full md:top-82 md:left-[43%]">2</h2>
+        <article class="p-4 h-40 absolute top-[34%] z-20 left-0 bg-slate-800 text-white border-2 rounded-lg md:rounded-tr-3xl md:w-1/4 md:bg-white md:text-black md:top-84 md:left-56">
+            <h1 class="float-right bg-slate-500 w-6 h-6 text-center rounded-full">X</h1>
+            <h4 class="text-center font-bold text-lg mb-2">2. Description</h4>
+            <p class="text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime reiciendis officia perferendis maiores optio nulla ullam quidem est, sit dignissimos.</p>  
+        </article>
+
+        <h2 class="text-center absolute top-76 right-20 bg-white font-bold text-lg font-poppins w-6 h-6 opacity-95 cursor-pointer hover:scale- animate-pulse rounded-full md:top-56 md:right-[38%]">3</h2>
+        <article class="p-4 h-40 absolute top-[34%] z-20 left-0 bg-slate-800 text-white border-2 rounded-lg md:rounded-bl-3xl md:w-1/4 md:bg-white md:text-black md:top-20 md:left-[62%]">
+            <h1 class="float-right bg-slate-500 w-6 h-6 text-center rounded-full">X</h1>
+            <h4 class="text-center font-bold text-lg mb-2">3. Description</h4>
+            <p class="text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime reiciendis officia perferendis maiores optio nulla ullam quidem est, sit dignissimos.</p>  
+        </article>
+
+        <h2 class="text-center absolute bottom-76 right-20 bg-white font-bold text-lg font-poppins w-6 h-6 opacity-95 cursor-pointer hover:scale- animate-pulse rounded-full md:top-82 md:right-[38%]">4</h2>
+        <article class="p-4 h-40 absolute top-[34%] z-20 left-0 bg-slate-800 text-white border-2 rounded-lg md:rounded-tl-3xl md:w-1/4 md:bg-white md:text-black md:top-84 md:left-[62%]">
+            <h1 class="float-right bg-slate-500 w-6 h-6 text-center rounded-full">X</h1>
+            <h4 class="text-center font-bold text-lg mb-2">4. Description</h4>
+            <p class="text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime reiciendis officia perferendis maiores optio nulla ullam quidem est, sit dignissimos.</p>  
+        </article>
+
+        <h2 class="text-center absolute top-60 left-1/2 bg-white font-bold text-lg font-poppins w-6 h-6 opacity-95 cursor-pointer hover:scale- animate-pulse rounded-full md:top-24">5</h2>
+        <article class="p-4 h-40 absolute top-[34%] z-20 left-0 bg-slate-800 text-white border-2 rounded-lg md:rounded-bl-3xl md:w-1/4 md:bg-white md:text-black md:top-5 md:left-[53%]">
+            <h1 class="float-right bg-slate-500 w-6 h-6 text-center rounded-full">X</h1>
+            <h4 class="text-center font-bold text-lg mb-2">5. Description</h4>
+            <p class="text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime reiciendis officia perferendis maiores optio nulla ullam quidem est, sit dignissimos.</p>  
+        </article>
+
+        <h2 class="text-center absolute top-96 left-1/2 bg-white font-bold text-lg font-poppins w-6 h-6 opacity-95 cursor-pointer hover:scale- animate-pulse rounded-full md:top-88">6</h2>
+        <article class="p-4 h-40 absolute top-[34%] z-20 left-0 bg-slate-800 text-white border-2 rounded-lg md:rounded-tl-3xl md:w-1/4 md:bg-white md:text-black md:top-92 md:left-[52%]">
+            <h1 class="float-right bg-slate-500 w-6 h-6 text-center rounded-full">X</h1>
+            <h4 class="text-center font-bold text-lg mb-2">6. Description</h4>
+            <p class="text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime reiciendis officia perferendis maiores optio nulla ullam quidem est, sit dignissimos.</p>  
+        </article>
+    </section>
+    <!-- End of Watch Features -->
+
+    <!-- Watch Content -->
+    <section id="watch_content" class="container bg-slate-700 h-screen p-2">
+        <main id="smartwatch"></main>
+        <img src="img/sw-11.png" alt="Watch 1" class="watch mt-16 animate-bounce mx-auto" data-watch="SW11">
+        <img src="img/sw-12.png" alt="Watch 2" class="watch hidden mt-16 animate-bounce mx-auto" data-watch="SW12">
+        <img src="img/sw-13.png" alt="Watch 3" class="watch hidden mt-16 animate-bounce mx-auto" data-watch="SW13">
+        <img src="img/sw-14.png" alt="Watch 4" class="watch hidden mt-16 animate-bounce mx-auto" data-watch="SW14">
+
+        <aside class="mt-4 flex flex-row justify-between items-center opacity-80 mx-auto bg-yellow-400">
+            <a href="#watch_content" class="block button" data-target="SW11"
+              ><img src="img/sw-11.png" alt="Smartwatch 1" class="block md:w-1/2 cursor-pointer choosed"
+            /></a>   
+            <a href="#watch_content" class="block button" data-target="SW12"
+              ><img src="img/sw-12.png" alt="Smartwatch 2" class="block md:w-[54%] cursor-pointer"
+            /></a>   
+            <a href="#watch_content" class="block button" data-target="SW13"
+              ><img src="img/sw-13.png" alt="Smartwatch 3" class="block md:w-1/2 cursor-pointer"
+            /></a>   
+            <a href="#watch_content" class="block button" data-target="SW14"
+              ><img src="img/sw-14.png" alt="Smartwatch 4" class="block md:w-1/2 cursor-pointer"
+            /></a>   
+        </aside>
+    </section>
+    <!-- End of Watch Content -->
 
     <!-- Footer -->
     <footer class="relative bg-black text-white">
@@ -100,7 +170,7 @@
                 <li class="my-4 list-none"><a href="#">Home</a></li>
                 <li class="my-4 list-none"><a href="#phenomenon">Phenomenon</a></li>
             </div>
-            <div class="mb-4 md:mb-0">
+            <div class="mb-4 block md:mb-0">
                 <h2 class="text-[22px] font-semibold text-orange-500 py-2 uppercase">Contact</h2>
                 <p class="text-[16px] my-4">gustiaryapriandana@gmail.com</p>
                 <p class="text-[16px] my-4">0822 8196 3857</p>
