@@ -40,7 +40,7 @@ body {
 }
 
 .choosed {
-  filter: drop-shadow(1px 1px 1px rgb(131, 216, 244));
+  filter: drop-shadow(2px 2px 2px rgb(200, 255, 0));
 }
 
 .img-1 {
@@ -52,3 +52,12 @@ body {
   filter: drop-shadow(2px 3px 2px white);
 }
 
+#watch_content {
+  background: radial-gradient(
+  circle at 50% 50%,
+  rgba(4, 44, 74, 0.8) 10%, /* Hitam transparan 80% */
+  rgba(0, 0, 0, 0.9) 50%, /* Slate transparan 80% */
+  rgba(0, 0, 0, 1) 100% /* Blue transparan 80% */
+);
+
+}

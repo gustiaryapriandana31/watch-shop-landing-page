@@ -15,7 +15,7 @@
 <body class="overflow-x-hidden h-[1000px] box-sizing-border">
     
     <!-- Navigation Bar -->
-    <!-- <nav class="absolute top-0 left-0 w-full items-center z-10 text-black bg-white/20">
+    <nav class="absolute top-0 left-0 w-full items-center z-10 text-black bg-white/20">
         <div class="mx-auto">
             <div class="flex justify-between items-center bg-white/10 p-2">
                 <img src="img/hero-image3.png" alt="Logo" class="w-20 h-10">
@@ -23,7 +23,7 @@
                 <div class="hidden mr-4 md:mr-12 sm:block">
                     <ul class="flex gap-5 md:gap-8 text-slate-400 font-roboto-mono text-sm lg:text-lg lg:gap-20">
                         <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#introduce">About</a></li>
+                        <li><a href="#watch_features">About</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
@@ -38,7 +38,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#introduce" class="flex flex-col justify-center items-center">
+                    <a href="#watch_features" class="flex flex-col justify-center items-center">
                         <ion-icon name="settings-outline" class="text-lg text-gray-600"></ion-icon>
                         <span class="text-gray-600 opacity-40 font-bold text-[10px] font-roboto-mono">About</span>
                     </a>
@@ -51,11 +51,11 @@
                 </li>
             </ul>
         </div>
-    </nav> -->
+    </nav>
     <!-- End of Navigation Bar -->
         
     <!-- Hero Image -->
-    <!-- <section class="md:flex md:flex-row p-2 md:h-screen bg-gradient-to-br from-blue-950 via-slate-700 to-slate-950">
+    <section class="md:flex md:flex-row p-2 md:h-screen bg-gradient-to-br from-blue-950 via-slate-700 to-slate-950">
         <div class="relative z-20 opacity-90 grow basis-1/2">
             <h1 class="text-7xl text-white font-bold text-start mt-36 font-serif ml-20 hidden md:block">WATCHERS</h1>
             <h3 class="fixed w-2/3 ml-14 text-2xl -mt-44 text-orange-400 font-bold text-center font-poppins md:static md:text-start md:text-xl md:mt-2 md:ml-24">Something Which's you want</h3>
@@ -75,55 +75,62 @@
             <img src="img/hero-image2.png" alt="Watch Hero Image" class="img-2 hidden animate-bounce md:absolute md:top-44 md:left-24 md:w-[85%] md:opacity-90 md:block">  
             <img src="img/hero-image5.png" alt="Watch Hero Image" class="img-3 fixed z-10 top-56 left-20 animate-bounce md:hidden "> 
         </div>
-    </section> -->
+    </section>
     <!-- End of Hero Image -->
 
 
     <!-- Watch Features -->
-    <section id="introduce" class="font-roboto bg-gray-900 h-screen flex flex-row justify-center items-center relative">
-         <div class="p-2">
-            <img src="img/hero-image3.png" alt="Watch Image" class="md:block hidden">
+    <section id="watch_features" class="font-roboto bg-gray-900 h-screen flex flex-row justify-center items-center relative">
+        <div class="p-2">
+            <img src="img/hero-image3.png" alt="Watch Image" class="-ml-7 md:block hidden">
             <img src="img/mobile-watch.png" alt="Watch Image" class="md:hidden block">
+            <button class="absolute bottom-32 left-[14%] md:static md:mt-3 block mx-auto text-base font-bold bg-slate-500 shadow-inner shadow-slate-200 py-2 px-5 text-center rounded-lg cursor-default">Click numbers for explanation</button>
         </div>
 
-        <h2 class="text-center absolute top-76 left-26 bg-white font-bold text-lg font-poppins w-6 h-6 opacity-95 cursor-pointer hover:scale- animate-pulse rounded-full md:top-56 md:left-[43%]">1</h2>
-        <article class="p-4 h-40 absolute top-[34%] z-20 left-0 bg-slate-800 text-white border-2 rounded-lg md:rounded-br-3xl md:w-1/4 md:bg-white md:text-black md:top-20 md:left-56">
-            <h1 class="float-right bg-slate-500 w-6 h-6 text-center rounded-full">X</h1>
+        <!-- Description 1 -->
+        <h2 class="number text-center absolute top-76 left-26 bg-white font-bold text-lg font-poppins w-6 h-6 opacity-95 cursor-pointer hover:scale-125 animate-pulse rounded-full md:top-48 md:left-[40%]" data-target="DESC1">1</h2>
+        <article class="hidden description p-4 h-40 absolute top-[34%] z-20 left-0 bg-slate-800 text-white border-2 rounded-lg md:rounded-br-3xl md:w-1/4 md:bg-white md:text-black md:top-12 md:left-48" data-desc="DESC1">
+            <h1 class="close cursor-pointer float-right bg-slate-500 w-6 h-6 text-center rounded-full">X</h1>
             <h4 class="text-center font-bold text-lg mb-2">1. Description</h4>
             <p class="text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime reiciendis officia perferendis maiores optio nulla ullam quidem est, sit dignissimos.</p>  
         </article>
 
-        <h2 class="text-center absolute bottom-76 left-26 bg-white font-bold text-lg font-poppins w-6 h-6 opacity-95 cursor-pointer hover:scale- animate-pulse rounded-full md:top-82 md:left-[43%]">2</h2>
-        <article class="p-4 h-40 absolute top-[34%] z-20 left-0 bg-slate-800 text-white border-2 rounded-lg md:rounded-tr-3xl md:w-1/4 md:bg-white md:text-black md:top-84 md:left-56">
-            <h1 class="float-right bg-slate-500 w-6 h-6 text-center rounded-full">X</h1>
+        <!-- Description 2-->
+        <h2 class="number text-center absolute bottom-76 left-26 bg-white font-bold text-lg font-poppins w-6 h-6 opacity-95 cursor-pointer hover:scale-125 animate-pulse rounded-full md:top-76 md:left-[40%]" data-target="DESC2">2</h2>
+        <article class="hidden description p-4 h-40 absolute top-[34%] z-20 left-0 bg-slate-800 text-white border-2 rounded-lg md:rounded-tr-3xl md:w-1/4 md:bg-white md:text-black md:top-80 md:left-48" data-desc="DESC2">
+            <h1 class="close cursor-pointer float-right bg-slate-500 w-6 h-6 text-center rounded-full">X</h1>
             <h4 class="text-center font-bold text-lg mb-2">2. Description</h4>
             <p class="text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime reiciendis officia perferendis maiores optio nulla ullam quidem est, sit dignissimos.</p>  
         </article>
 
-        <h2 class="text-center absolute top-76 right-20 bg-white font-bold text-lg font-poppins w-6 h-6 opacity-95 cursor-pointer hover:scale- animate-pulse rounded-full md:top-56 md:right-[38%]">3</h2>
-        <article class="p-4 h-40 absolute top-[34%] z-20 left-0 bg-slate-800 text-white border-2 rounded-lg md:rounded-bl-3xl md:w-1/4 md:bg-white md:text-black md:top-20 md:left-[62%]">
-            <h1 class="float-right bg-slate-500 w-6 h-6 text-center rounded-full">X</h1>
+        <!-- Description 3 -->    
+        <h2 class="number text-center absolute top-76 right-20 bg-white font-bold text-lg font-poppins w-6 h-6 opacity-95 cursor-pointer hover:scale-125 animate-pulse rounded-full md:top-48 md:right-[40%]" data-target="DESC3">3</h2>
+        <article class="hidden description p-4 h-40 absolute top-[34%] z-20 left-0 bg-slate-800 text-white border-2 rounded-lg md:rounded-bl-3xl md:w-1/4 md:bg-white md:text-black md:top-12 md:left-[60%]" data-desc="DESC3">
+            <h1 class="close cursor-pointer float-right bg-slate-500 w-6 h-6 text-center rounded-full">X</h1>
             <h4 class="text-center font-bold text-lg mb-2">3. Description</h4>
             <p class="text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime reiciendis officia perferendis maiores optio nulla ullam quidem est, sit dignissimos.</p>  
         </article>
-
-        <h2 class="text-center absolute bottom-76 right-20 bg-white font-bold text-lg font-poppins w-6 h-6 opacity-95 cursor-pointer hover:scale- animate-pulse rounded-full md:top-82 md:right-[38%]">4</h2>
-        <article class="p-4 h-40 absolute top-[34%] z-20 left-0 bg-slate-800 text-white border-2 rounded-lg md:rounded-tl-3xl md:w-1/4 md:bg-white md:text-black md:top-84 md:left-[62%]">
-            <h1 class="float-right bg-slate-500 w-6 h-6 text-center rounded-full">X</h1>
+        
+        <!-- Description 4-->
+        <h2 class="number text-center absolute bottom-76 right-20 bg-white font-bold text-lg font-poppins w-6 h-6 opacity-95 cursor-pointer hover:scale-125 animate-pulse rounded-full md:top-76 md:right-[40%]" data-target="DESC4">4</h2>
+        <article class="hidden description p-4 h-40 absolute top-[34%] z-20 left-0 bg-slate-800 text-white border-2 rounded-lg md:rounded-tl-3xl md:w-1/4 md:bg-white md:text-black md:top-80 md:left-[60%]" data-desc="DESC4">
+            <h1 class="close cursor-pointer float-right bg-slate-500 w-6 h-6 text-center rounded-full">X</h1>
             <h4 class="text-center font-bold text-lg mb-2">4. Description</h4>
             <p class="text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime reiciendis officia perferendis maiores optio nulla ullam quidem est, sit dignissimos.</p>  
         </article>
 
-        <h2 class="text-center absolute top-60 left-1/2 bg-white font-bold text-lg font-poppins w-6 h-6 opacity-95 cursor-pointer hover:scale- animate-pulse rounded-full md:top-24">5</h2>
-        <article class="p-4 h-40 absolute top-[34%] z-20 left-0 bg-slate-800 text-white border-2 rounded-lg md:rounded-bl-3xl md:w-1/4 md:bg-white md:text-black md:top-5 md:left-[53%]">
-            <h1 class="float-right bg-slate-500 w-6 h-6 text-center rounded-full">X</h1>
+        <!-- Description 5-->
+        <h2 class="number text-center absolute top-60 left-1/2 bg-white font-bold text-lg font-poppins w-6 h-6 opacity-95 cursor-pointer hover:scale-125 animate-pulse rounded-full md:top-20" data-target="DESC5">5</h2>
+        <article class="hidden description p-4 h-40 absolute top-[34%] z-20 left-0 bg-slate-800 text-white border-2 rounded-lg md:rounded-bl-3xl md:w-1/4 md:bg-white md:text-black md:top-2 md:left-[53%]" data-desc="DESC5">
+            <h1 class="close cursor-pointer float-right bg-slate-500 w-6 h-6 text-center rounded-full">X</h1>
             <h4 class="text-center font-bold text-lg mb-2">5. Description</h4>
             <p class="text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime reiciendis officia perferendis maiores optio nulla ullam quidem est, sit dignissimos.</p>  
         </article>
 
-        <h2 class="text-center absolute top-96 left-1/2 bg-white font-bold text-lg font-poppins w-6 h-6 opacity-95 cursor-pointer hover:scale- animate-pulse rounded-full md:top-88">6</h2>
-        <article class="p-4 h-40 absolute top-[34%] z-20 left-0 bg-slate-800 text-white border-2 rounded-lg md:rounded-tl-3xl md:w-1/4 md:bg-white md:text-black md:top-92 md:left-[52%]">
-            <h1 class="float-right bg-slate-500 w-6 h-6 text-center rounded-full">X</h1>
+        <!-- Description 6-->
+        <h2 class="number text-center absolute top-96 left-1/2 bg-white font-bold text-lg font-poppins w-6 h-6 opacity-95 cursor-pointer hover:scale-125 animate-pulse rounded-full md:top-76" data-target="DESC6">6</h2>
+        <article class="hidden description p-4 h-40 absolute top-[34%] z-20 left-0 bg-slate-800 text-white border-2 rounded-lg md:rounded-tl-3xl md:w-1/4 md:bg-white md:text-black md:top-80 md:left-[52%]" data-desc="DESC6">
+            <h1 class="close cursor-pointer float-right bg-slate-500 w-6 h-6 text-center rounded-full">X</h1>
             <h4 class="text-center font-bold text-lg mb-2">6. Description</h4>
             <p class="text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime reiciendis officia perferendis maiores optio nulla ullam quidem est, sit dignissimos.</p>  
         </article>
@@ -131,11 +138,10 @@
     <!-- End of Watch Features -->
 
     <!-- Watch Content -->
-    <!-- bg-[url('./../img/bg.png')] -->
-    <div id="watch_content" class="bg-slate-800 h-screen p-2">
-        <h1 class="text-center text-orange-400 font-bold font-roboto text-3xl mt-2 -mb-14 md:mt-0 md:mb-5">RELEASED PRODUCT</h1>
+    <div id="watch_content" class="h-screen p-2">
+        <h1 class="text-center text-blue-700 font-bold font-roboto text-3xl md:text-5xl mt-2 -mb-16 md:mb-5">RELEASED PRODUCT</h1>
         <!-- <main id="smartwatch" class="relative w-2/3 h-full px-4 mx-auto shadow-sm shadow-red-200"></main> -->
-        <section class="relative top-[15%] w-[92%] h-3/4 px-4 mx-auto shadow-sm shadow-white md:w-2/3 md:h-[85%] md:top-0">
+        <section class="rounded-lg relative top-[15%] w-[92%] h-3/4 px-4 mx-auto shadow-lg shadow-white border-t-[1px] border-t-blue-200 md:shadow-md md:shadow-slate-400/70 hover:shadow-sky-300/50 md:w-2/3 md:h-[85%] md:top-0">
             <div class="watch relative" data-watch="SW11">
                 <h2 class="absolute top-10 md:top-5 left-6 md:left-5 font-tenali text-white text-2xl md:text-4xl font-bold p-2 border-b-2 md:border-b-4 border-b-slate-400">SMARTWATCH 1H 360PX 1</h2>
                 <article class="absolute top-56 left-52 md:top-60 md:left-10 font-semibold font-roboto-mono text-[0.5rem] md:text-[0.65rem] opacity-80 md:shadow-sm md:shadow-slate-400 rounded-sm md:rounded-3xl p-1 md:p-3">
@@ -217,19 +223,18 @@
                 </ul>
             </div>
            
-            
-            <aside class="absolute bottom-44 md:bottom-7 md:left-1/4 md:bg-yellow-400/60 rounded-lg md:rounded-full md:w-1/2 md:px-2 md:flex md:flex-row md:justify-center md:gap-3 md:opacity-80">
+            <aside class="absolute bottom-56 md:bottom-4 md:left-1/4 md:border-2 md:border-yellow-400/20 md:py-px rounded-lg md:rounded-full md:w-1/2 md:px-2 md:flex md:flex-row md:justify-center md:gap-3 md:opacity-80">
                 <a href="#watch_content" class="button" data-target="SW11"
-                ><img src="img/sw-11.png" alt="Smartwatch 1" class="choosed w-16 md:w-28 my-4 animate-pulse md:my-0"
+                ><img src="img/sw-11.png" alt="Smartwatch 1" class="choosed w-16 md:w-28 my-4 md:my-0"
                 /></a>
                 <a href="#watch_content" class="button" data-target="SW12"
-                ><img src="img/sw-12.png" alt="Smartwatch 2" class="w-16 md:w-28 my-4 animate-pulse md:my-0"
+                ><img src="img/sw-12.png" alt="Smartwatch 2" class="w-16 md:w-28 my-4 md:my-0"
                 /></a>
                 <a href="#watch_content" class="button" data-target="SW13"
-                ><img src="img/sw-13.png" alt="Smartwatch 3" class="w-16 md:w-28 my-4 animate-pulse md:my-0"
+                ><img src="img/sw-13.png" alt="Smartwatch 3" class="w-16 md:w-28 my-4 md:my-0"
                 /></a>
                 <a href="#watch_content" class="button" data-target="SW14"
-                ><img src="img/sw-14.png" alt="Smartwatch 4" class="w-16 md:w-28 my-4 animate-pulse md:my-0"
+                ><img src="img/sw-14.png" alt="Smartwatch 4" class="w-16 md:w-28 my-4 md:my-0"
                 /></a>
             </aside>  
         </section> 
@@ -314,20 +319,19 @@
                     <li class="my-px text-white">Receive call, text, and app notifications directly on your wrist.</li>
                 </ul>
             </div>
-           
             
-            <aside class="absolute bottom-44 md:bottom-7 md:left-1/4 md:bg-yellow-400/60 rounded-lg md:rounded-full md:w-1/2 md:px-2 md:flex md:flex-row md:justify-center md:gap-3 md:opacity-80">
+            <aside class="absolute bottom-56 md:bottom-4 md:left-1/4 md:border-2 md:border-yellow-400/20 md:py-px rounded-lg md:rounded-full md:w-1/2 md:px-2 md:flex md:flex-row md:justify-center md:gap-3 md:opacity-80">
                 <a href="#watch_content" class="button" data-target="SW21"
-                ><img src="img/sw-21.png" alt="Smartwatch 1" class="choosed w-16 md:w-28 my-4 animate-pulse md:my-0"
+                ><img src="img/sw-21.png" alt="Smartwatch 1" class="choosed w-16 md:w-28 my-4 md:my-0"
                 /></a>
                 <a href="#watch_content" class="button" data-target="SW22"
-                ><img src="img/sw-22.png" alt="Smartwatch 2" class="w-16 md:w-28 my-4 animate-pulse md:my-0"
+                ><img src="img/sw-22.png" alt="Smartwatch 2" class="w-16 md:w-28 my-4 md:my-0"
                 /></a>
                 <a href="#watch_content" class="button" data-target="SW23"
-                ><img src="img/sw-23.png" alt="Smartwatch 3" class="w-16 md:w-28 my-4 animate-pulse md:my-0"
+                ><img src="img/sw-23.png" alt="Smartwatch 3" class="w-16 md:w-28 my-4 md:my-0"
                 /></a>
                 <a href="#watch_content" class="button" data-target="SW24"
-                ><img src="img/sw-24.png" alt="Smartwatch 4" class="w-16 md:w-28 my-4 animate-pulse md:my-0"
+                ><img src="img/sw-24.png" alt="Smartwatch 4" class="w-16 md:w-28 my-4 md:my-0"
                 /></a>
             </aside>  
         </section> 
@@ -414,18 +418,18 @@
             </div>
            
             
-            <aside class="absolute bottom-44 md:bottom-7 md:left-1/4 md:bg-yellow-400/60 rounded-lg md:rounded-full md:w-1/2 md:px-2 md:flex md:flex-row md:justify-center md:gap-3 md:opacity-80">
+            <aside class="absolute bottom-56 md:bottom-4 md:left-1/4 md:border-2 md:border-yellow-400/20 md:py-px rounded-lg md:rounded-full md:w-1/2 md:px-2 md:flex md:flex-row md:justify-center md:gap-3 md:opacity-80">
                 <a href="#watch_content" class="button" data-target="SW31"
-                ><img src="img/sw-31.png" alt="Smartwatch 1" class="choosed w-16 md:w-28 my-4 animate-pulse md:my-0"
+                ><img src="img/sw-31.png" alt="Smartwatch 1" class="choosed w-16 md:w-28 my-4 md:my-0"
                 /></a>
                 <a href="#watch_content" class="button" data-target="SW32"
-                ><img src="img/sw-32.png" alt="Smartwatch 2" class="w-16 md:w-28 my-4 animate-pulse md:my-0"
+                ><img src="img/sw-32.png" alt="Smartwatch 2" class="w-16 md:w-28 my-4 md:my-0"
                 /></a>
                 <a href="#watch_content" class="button" data-target="SW33"
-                ><img src="img/sw-33.png" alt="Smartwatch 3" class="w-16 md:w-28 my-4 animate-pulse md:my-0"
+                ><img src="img/sw-33.png" alt="Smartwatch 3" class="w-16 md:w-28 my-4 md:my-0"
                 /></a>
                 <a href="#watch_content" class="button" data-target="SW34"
-                ><img src="img/sw-34.png" alt="Smartwatch 4" class="w-16 md:w-28 my-4 animate-pulse md:my-0"
+                ><img src="img/sw-34.png" alt="Smartwatch 4" class="w-16 md:w-28 my-4 md:my-0"
                 /></a>
             </aside>  
         </section> 
@@ -507,19 +511,18 @@
                 </ul>
             </div>
            
-            
-            <aside class="absolute bottom-44 md:bottom-7 md:left-1/4 md:bg-yellow-400/60 rounded-lg md:rounded-full md:w-1/2 md:px-2 md:flex md:flex-row md:justify-center md:gap-3 md:opacity-80">
+            <aside class="absolute bottom-56 md:bottom-4 md:left-1/4 md:border-2 md:border-yellow-400/20 md:py-px rounded-lg md:rounded-full md:w-1/2 md:px-2 md:flex md:flex-row md:justify-center md:gap-3 md:opacity-80">
                 <a href="#watch_content" class="button" data-target="SW41"
-                ><img src="img/sw-41.png" alt="Smartwatch 1" class="choosed w-16 md:w-28 my-4 animate-pulse md:my-0"
+                ><img src="img/sw-41.png" alt="Smartwatch 1" class="choosed w-16 md:w-28 my-4 md:my-0"
                 /></a>
                 <a href="#watch_content" class="button" data-target="SW42"
-                ><img src="img/sw-42.png" alt="Smartwatch 2" class="w-16 md:w-28 my-4 animate-pulse md:my-0"
+                ><img src="img/sw-42.png" alt="Smartwatch 2" class="w-16 md:w-28 my-4 md:my-0"
                 /></a>
                 <a href="#watch_content" class="button" data-target="SW43"
-                ><img src="img/sw-43.png" alt="Smartwatch 3" class="w-16 md:w-28 my-4 animate-pulse md:my-0"
+                ><img src="img/sw-43.png" alt="Smartwatch 3" class="w-16 md:w-28 my-4 md:my-0"
                 /></a>
                 <a href="#watch_content" class="button" data-target="SW44"
-                ><img src="img/sw-44.png" alt="Smartwatch 4" class="w-16 md:w-28 my-4 animate-pulse md:my-0"
+                ><img src="img/sw-44.png" alt="Smartwatch 4" class="w-16 md:w-28 my-4 md:my-0"
                 /></a>
             </aside>  
         </section> 

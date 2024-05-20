@@ -28,6 +28,7 @@
 //   }
 // });
 
+// Watch Contents Tabbed Navigation
 let buttons = document.querySelectorAll(".button");
 let watchs = document.getElementById("smartwatch");
 
@@ -56,5 +57,33 @@ buttons.forEach(function (button) {
       watchs.innerHTML = "Konten tidak ditemukan";
       watchs.style.color = "white";
     }
+  });
+});
+
+// Watch Features Description
+const numbers = document.querySelectorAll(".number");
+const description = document.querySelectorAll(".description");
+const closeButton = document.querySelectorAll(".close");
+const nextButton = document.querySelectorAll(".next");
+
+numbers.forEach(function (number) {
+  number.addEventListener('click', () => {
+    let target = number.getAttribute("data-target");
+
+    description.forEach(function (desc) {
+      if (desc.getAttribute("data-desc") === target) {
+        desc.classList.remove("hidden");
+      } else {
+        desc.classList.add("hidden");
+      }
+    });
+  })
+});
+
+closeButton.forEach(function (closeB) {
+  closeB.addEventListener("click", () => {
+    description.forEach(function (desc) {
+      desc.classList.add("hidden");
+    });
   });
 });
