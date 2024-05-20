@@ -52,7 +52,7 @@ body {
   filter: drop-shadow(2px 3px 2px white);
 }
 
-#watch_content {
+#watch_content, #other_products {
   background: radial-gradient(
   circle at 50% 50%,
   rgba(4, 44, 74, 0.8) 10%, /* Hitam transparan 80% */
