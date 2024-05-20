@@ -8,14 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@100;300;400;500;700;900&family=Bebas+Neue&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Audiowide&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@100;300;400;500;700;900&family=Bebas+Neue&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Audiowide&family=Tenali+Ramakrishna&display=swap"
       rel="stylesheet"
     />
 </head>
 <body class="overflow-x-hidden h-[1000px] box-sizing-border">
     
     <!-- Navigation Bar -->
-    <nav class="absolute top-0 left-0 w-full items-center z-10 text-black bg-white/20">
+    <!-- <nav class="absolute top-0 left-0 w-full items-center z-10 text-black bg-white/20">
         <div class="mx-auto">
             <div class="flex justify-between items-center bg-white/10 p-2">
                 <img src="img/hero-image3.png" alt="Logo" class="w-20 h-10">
@@ -51,11 +51,11 @@
                 </li>
             </ul>
         </div>
-    </nav>
+    </nav> -->
     <!-- End of Navigation Bar -->
         
     <!-- Hero Image -->
-    <section class="md:flex md:flex-row p-2 md:h-screen bg-gradient-to-br from-blue-950 via-slate-700 to-slate-950">
+    <!-- <section class="md:flex md:flex-row p-2 md:h-screen bg-gradient-to-br from-blue-950 via-slate-700 to-slate-950">
         <div class="relative z-20 opacity-90 grow basis-1/2">
             <h1 class="text-7xl text-white font-bold text-start mt-36 font-serif ml-20 hidden md:block">WATCHERS</h1>
             <h3 class="fixed w-2/3 ml-14 text-2xl -mt-44 text-orange-400 font-bold text-center font-poppins md:static md:text-start md:text-xl md:mt-2 md:ml-24">Something Which's you want</h3>
@@ -75,7 +75,7 @@
             <img src="img/hero-image2.png" alt="Watch Hero Image" class="img-2 hidden animate-bounce md:absolute md:top-44 md:left-24 md:w-[85%] md:opacity-90 md:block">  
             <img src="img/hero-image5.png" alt="Watch Hero Image" class="img-3 fixed z-10 top-56 left-20 animate-bounce md:hidden "> 
         </div>
-    </section>
+    </section> -->
     <!-- End of Hero Image -->
 
 
@@ -131,93 +131,407 @@
     <!-- End of Watch Features -->
 
     <!-- Watch Content -->
-    <section id="watch_content" class="bg-black h-screen p-2">
-        <div class="mt-8 w-1/2 pt-2 pb-4 px-4 mx-auto shadow-lg shadow-blue-400">
-            <main id="smartwatch"></main>
-            <img src="img/sw-11.png" alt="Watch 1" class="watch mt-16 animate-bounce mx-auto" data-watch="SW11">
-            <img src="img/sw-12.png" alt="Watch 2" class="watch hidden mt-16 animate-bounce mx-auto" data-watch="SW12">
-            <img src="img/sw-13.png" alt="Watch 3" class="watch hidden mt-16 animate-bounce mx-auto" data-watch="SW13">
-            <img src="img/sw-14.png" alt="Watch 4" class="watch hidden mt-16 animate-bounce mx-auto" data-watch="SW14">
-            <aside class="mt-8 flex flex-row justify-center gap-1 md:gap-3 opacity-80">
+    <!-- bg-[url('./../img/bg.png')] -->
+    <div id="watch_content" class="bg-slate-800 h-screen p-2">
+        <h1 class="text-center text-orange-400 font-bold font-roboto text-3xl mt-2 -mb-14 md:mt-0 md:mb-5">RELEASED PRODUCT</h1>
+        <!-- <main id="smartwatch" class="relative w-2/3 h-full px-4 mx-auto shadow-sm shadow-red-200"></main> -->
+        <section class="relative top-[15%] w-[92%] h-3/4 px-4 mx-auto shadow-sm shadow-white md:w-2/3 md:h-[85%] md:top-0">
+            <div class="watch relative" data-watch="SW11">
+                <h2 class="absolute top-10 md:top-5 left-6 md:left-5 font-tenali text-white text-2xl md:text-4xl font-bold p-2 border-b-2 md:border-b-4 border-b-slate-400">SMARTWATCH 1H 360PX 1</h2>
+                <article class="absolute top-56 left-52 md:top-60 md:left-10 font-semibold font-roboto-mono text-[0.5rem] md:text-[0.65rem] opacity-80 md:shadow-sm md:shadow-slate-400 rounded-sm md:rounded-3xl p-1 md:p-3">
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-green-500"><ion-icon name="battery-charging" class="text-green-500 text-sm mr-2"></ion-icon>Fast Charging</p>
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-blue-400"><ion-icon name="water" class="text-blue-400 text-sm mr-2">
+                        </ion-icon>Water Resistant</p>
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-white"><ion-icon name="radio" class="text-white text-sm mr-2"></ion-icon>Wireless Connection</p>
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-yellow-500"><ion-icon name="apps" class="text-yellow-500 text-sm mr-2">
+                        </ion-icon>More Application</p>
+                </article>
+                <h5 class="absolute border-b-2 border-b-orange-600 md:border-b-0 top-72 right-28 md:top-24 md:right-32 font-bold md:font-semibold font-tenali text-2xl md:text-5xl text-orange-600">$30.00</h5>
+                <hr class="hidden md:block absolute top-36 right-20 border border-orange-600 w-1/5" />
+                <hr class="hidden md:block absolute top-40 -rotate-[42deg] right-60 border w-10 border-orange-600"/>
+                <img src="img/sw-11.png" alt="Watch 1" class="block absolute top-32 left-0 md:top-12 md:left-16 animate-bounce"/>
+                <ul class="w-56 absolute top-88 right-7 md:top-64 md:right-5 font-semibold font-roboto-mono text-[0.6rem] shadow-sm shadow-slate-400 rounded-lg pl-5 p-2 list-disc opacity-85">
+                    <li class="my-px text-white">Tracking steps, distance, calories burned, and heartbeat</li>
+                    <li class="my-px text-white">Navigate the smartwatch with ease using the intuitive touchscreen.</li>
+                    <li class="my-px text-white">Receive call, text, and app notifications directly on your wrist.</li>
+                </ul>
+            </div>
+            <div class="hidden watch relative" data-watch="SW12">
+                <h2 class="absolute top-10 md:top-5 left-6 md:left-5 font-tenali text-white text-2xl md:text-4xl font-bold p-2 border-b-2 md:border-b-4 border-b-slate-400">ULTRA SMARTWATCH V21</h2>
+                <article class="absolute top-56 left-52 md:top-60 md:left-10 font-semibold font-roboto-mono text-[0.5rem] md:text-[0.65rem] opacity-80 md:shadow-sm md:shadow-slate-400 rounded-sm md:rounded-3xl p-1 md:p-3">
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-green-500"><ion-icon name="battery-charging" class="text-green-500 text-sm mr-2"></ion-icon>Fast Charging</p>
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-blue-400"><ion-icon name="water" class="text-blue-400 text-sm mr-2">
+                        </ion-icon>Water Resistant</p>
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-white"><ion-icon name="radio" class="text-white text-sm mr-2"></ion-icon>Wireless Connection</p>
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-yellow-500"><ion-icon name="apps" class="text-yellow-500 text-sm mr-2">
+                        </ion-icon>More Application</p>
+                </article>
+                <h5 class="absolute border-b-2 border-b-orange-600 md:border-b-0 top-72 right-28 md:top-24 md:right-32 font-bold md:font-semibold font-tenali text-2xl md:text-5xl text-orange-600">$67.00</h5>
+                <hr class="hidden md:block absolute top-36 right-20 border border-orange-600 w-1/5" />
+                <hr class="hidden md:block absolute top-40 -rotate-[42deg] right-60 border w-10 border-orange-600"/>
+                <img src="img/sw-12.png" alt="Watch 1" class="block absolute top-32 left-0 md:top-12 md:left-16 animate-bounce"/>
+                <ul class="w-56 absolute top-88 right-7 md:top-64 md:right-5 font-semibold font-roboto-mono text-[0.6rem] shadow-sm shadow-slate-400 rounded-lg pl-5 p-2 list-disc opacity-85">
+                    <li class="my-px text-white">Tracking steps, distance, calories burned, and heartbeat</li>
+                    <li class="my-px text-white">Navigate the smartwatch with ease using the intuitive touchscreen.</li>
+                    <li class="my-px text-white">Receive call, text, and app notifications directly on your wrist.</li>
+                </ul>
+            </div>
+            <div class="hidden watch relative" data-watch="SW13">
+                <h2 class="absolute top-10 md:top-5 left-6 md:left-5 font-tenali text-white text-2xl md:text-4xl font-bold p-2 border-b-2 md:border-b-4 border-b-slate-400">SMARTWATCH PREM 1A</h2>
+                <article class="absolute top-56 left-52 md:top-60 md:left-10 font-semibold font-roboto-mono text-[0.5rem] md:text-[0.65rem] opacity-80 md:shadow-sm md:shadow-slate-400 rounded-sm md:rounded-3xl p-1 md:p-3">
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-green-500"><ion-icon name="battery-charging" class="text-green-500 text-sm mr-2"></ion-icon>Fast Charging</p>
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-blue-400"><ion-icon name="water" class="text-blue-400 text-sm mr-2">
+                        </ion-icon>Water Resistant</p>
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-white"><ion-icon name="radio" class="text-white text-sm mr-2"></ion-icon>Wireless Connection</p>
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-yellow-500"><ion-icon name="apps" class="text-yellow-500 text-sm mr-2">
+                        </ion-icon>More Application</p>
+                </article>
+                <h5 class="absolute border-b-2 border-b-orange-600 md:border-b-0 top-72 right-28 md:top-24 md:right-32 font-bold md:font-semibold font-tenali text-2xl md:text-5xl text-orange-600">$80.00</h5>
+                <hr class="hidden md:block absolute top-36 right-20 border border-orange-600 w-1/5" />
+                <hr class="hidden md:block absolute top-40 -rotate-[42deg] right-60 border w-10 border-orange-600"/>
+                <img src="img/sw-13.png" alt="Watch 1" class="block absolute top-32 left-0 md:top-12 md:left-16 animate-bounce"/>
+                <ul class="w-56 absolute top-88 right-7 md:top-64 md:right-5 font-semibold font-roboto-mono text-[0.6rem] shadow-sm shadow-slate-400 rounded-lg pl-5 p-2 list-disc opacity-85">
+                    <li class="my-px text-white">Tracking steps, distance, calories burned, and heartbeat</li>
+                    <li class="my-px text-white">Navigate the smartwatch with ease using the intuitive touchscreen.</li>
+                    <li class="my-px text-white">Receive call, text, and app notifications directly on your wrist.</li>
+                </ul>
+            </div>
+            <div class="hidden watch relative" data-watch="SW14">
+                <h2 class="absolute top-10 md:top-5 left-6 md:left-5 font-tenali text-white text-2xl md:text-4xl font-bold p-2 border-b-2 md:border-b-4 border-b-slate-400">SMARTWATCH VSERIES 2.0</h2>
+                <article class="absolute top-56 left-52 md:top-60 md:left-10 font-semibold font-roboto-mono text-[0.5rem] md:text-[0.65rem] opacity-80 md:shadow-sm md:shadow-slate-400 rounded-sm md:rounded-3xl p-1 md:p-3">
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-green-500"><ion-icon name="battery-charging" class="text-green-500 text-sm mr-2"></ion-icon>Fast Charging</p>
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-blue-400"><ion-icon name="water" class="text-blue-400 text-sm mr-2">
+                        </ion-icon>Water Resistant</p>
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-white"><ion-icon name="radio" class="text-white text-sm mr-2"></ion-icon>Wireless Connection</p>
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-yellow-500"><ion-icon name="apps" class="text-yellow-500 text-sm mr-2">
+                        </ion-icon>More Application</p>
+                </article>
+                <h5 class="absolute border-b-2 border-b-orange-600 md:border-b-0 top-72 right-28 md:top-24 md:right-32 font-bold md:font-semibold font-tenali text-2xl md:text-5xl text-orange-600">$45.00</h5>
+                <hr class="hidden md:block absolute top-36 right-20 border border-orange-600 w-1/5" />
+                <hr class="hidden md:block absolute top-40 -rotate-[42deg] right-60 border w-10 border-orange-600"/>
+                <img src="img/sw-14.png" alt="Watch 1" class="block absolute top-32 left-0 md:top-12 md:left-16 animate-bounce"/>
+                <ul class="w-56 absolute top-88 right-7 md:top-64 md:right-5 font-semibold font-roboto-mono text-[0.6rem] shadow-sm shadow-slate-400 rounded-lg pl-5 p-2 list-disc opacity-85">
+                    <li class="my-px text-white">Tracking steps, distance, calories burned, and heartbeat</li>
+                    <li class="my-px text-white">Navigate the smartwatch with ease using the intuitive touchscreen.</li>
+                    <li class="my-px text-white">Receive call, text, and app notifications directly on your wrist.</li>
+                </ul>
+            </div>
+           
+            
+            <aside class="absolute bottom-44 md:bottom-7 md:left-1/4 md:bg-yellow-400/60 rounded-lg md:rounded-full md:w-1/2 md:px-2 md:flex md:flex-row md:justify-center md:gap-3 md:opacity-80">
                 <a href="#watch_content" class="button" data-target="SW11"
-                    ><img src="img/sw-11.png" alt="Smartwatch 1" class="w-8 choosed md:w-28"
-                /></a>          
+                ><img src="img/sw-11.png" alt="Smartwatch 1" class="choosed w-16 md:w-28 my-4 animate-pulse md:my-0"
+                /></a>
                 <a href="#watch_content" class="button" data-target="SW12"
-                    ><img src="img/sw-12.png" alt="Smartwatch 2" class="w-8 md:w-28"
+                ><img src="img/sw-12.png" alt="Smartwatch 2" class="w-16 md:w-28 my-4 animate-pulse md:my-0"
                 /></a>
                 <a href="#watch_content" class="button" data-target="SW13"
-                    ><img src="img/sw-13.png" alt="Smartwatch 3" class="w-8 md:w-28"
+                ><img src="img/sw-13.png" alt="Smartwatch 3" class="w-16 md:w-28 my-4 animate-pulse md:my-0"
                 /></a>
                 <a href="#watch_content" class="button" data-target="SW14"
-                    ><img src="img/sw-14.png" alt="Smartwatch 4" class="w-8 md:w-28"
+                ><img src="img/sw-14.png" alt="Smartwatch 4" class="w-16 md:w-28 my-4 animate-pulse md:my-0"
                 /></a>
-            </aside>
-        </div> 
-        <div class="mt-8 w-1/2 pt-2 pb-4 px-4 mx-auto shadow-lg shadow-blue-400">
-            <main id="smartwatch"></main>
-            <img src="img/sw-21.png" alt="Watch 1" class="watch mt-16 animate-bounce mx-auto" data-watch="SW11">
-            <img src="img/sw-22.png" alt="Watch 2" class="watch hidden mt-16 animate-bounce mx-auto" data-watch="SW12">
-            <img src="img/sw-23.png" alt="Watch 3" class="watch hidden mt-16 animate-bounce mx-auto" data-watch="SW13">
-            <img src="img/sw-24.png" alt="Watch 4" class="watch hidden mt-16 animate-bounce mx-auto" data-watch="SW14">
-            <aside class="mt-8 flex flex-row justify-center gap-1 md:gap-3 opacity-80">
-                <a href="#watch_content" class="button" data-target="SW11"
-                    ><img src="img/sw-21.png" alt="Smartwatch 1" class="w-8 choosed md:w-28"
-                /></a>          
-                <a href="#watch_content" class="button" data-target="SW12"
-                    ><img src="img/sw-22.png" alt="Smartwatch 2" class="w-8 md:w-28"
+            </aside>  
+        </section> 
+        <section class="relative top-[15%] w-[92%] h-3/4 px-4 mx-auto shadow-sm shadow-white md:w-2/3 md:h-[85%] md:top-0">
+            <div class="watch relative" data-watch="SW21">
+                <h2 class="absolute top-10 md:top-5 left-6 md:left-5 font-tenali text-white text-2xl md:text-4xl font-bold p-2 border-b-2 md:border-b-4 border-b-slate-400">ADV SWPPLE 540PX</h2>
+                <article class="absolute top-56 left-52 md:top-60 md:left-10 font-semibold font-roboto-mono text-[0.5rem] md:text-[0.65rem] opacity-80 md:shadow-sm md:shadow-slate-400 rounded-sm md:rounded-3xl p-1 md:p-3">
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-green-500"><ion-icon name="battery-charging" class="text-green-500 text-sm mr-2"></ion-icon>Fast Charging</p>
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-blue-400"><ion-icon name="water" class="text-blue-400 text-sm mr-2">
+                        </ion-icon>Water Resistant</p>
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-white"><ion-icon name="radio" class="text-white text-sm mr-2"></ion-icon>Wireless Connection</p>
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-yellow-500"><ion-icon name="apps" class="text-yellow-500 text-sm mr-2">
+                        </ion-icon>More Application</p>
+                </article>
+                <h5 class="absolute border-b-2 border-b-orange-600 md:border-b-0 top-72 right-28 md:top-24 md:right-32 font-bold md:font-semibold font-tenali text-2xl md:text-5xl text-orange-600">$170.00</h5>
+                <hr class="hidden md:block absolute top-36 right-20 border border-orange-600 w-1/5" />
+                <hr class="hidden md:block absolute top-40 -rotate-[42deg] right-60 border w-10 border-orange-600"/>
+                <img src="img/sw-21.png" alt="Watch 1" class="block absolute top-32 left-0 md:top-12 md:left-16 animate-bounce"/>
+                <ul class="w-56 absolute top-88 right-7 md:top-64 md:right-5 font-semibold font-roboto-mono text-[0.6rem] shadow-sm shadow-slate-400 rounded-lg pl-5 p-2 list-disc opacity-85">
+                    <li class="my-px text-white">Tracking steps, distance, calories burned, and heartbeat</li>
+                    <li class="my-px text-white">Navigate the smartwatch with ease using the intuitive touchscreen.</li>
+                    <li class="my-px text-white">Receive call, text, and app notifications directly on your wrist.</li>
+                </ul>
+            </div>
+            <div class="hidden watch relative" data-watch="SW22">
+                <h2 class="absolute top-10 md:top-5 left-6 md:left-5 font-tenali text-white text-2xl md:text-4xl font-bold p-2 border-b-2 md:border-b-4 border-b-slate-400">NEW SPLLE SERIES S3</h2>
+                <article class="absolute top-56 left-52 md:top-60 md:left-10 font-semibold font-roboto-mono text-[0.5rem] md:text-[0.65rem] opacity-80 md:shadow-sm md:shadow-slate-400 rounded-sm md:rounded-3xl p-1 md:p-3">
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-green-500"><ion-icon name="battery-charging" class="text-green-500 text-sm mr-2"></ion-icon>Fast Charging</p>
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-blue-400"><ion-icon name="water" class="text-blue-400 text-sm mr-2">
+                        </ion-icon>Water Resistant</p>
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-white"><ion-icon name="radio" class="text-white text-sm mr-2"></ion-icon>Wireless Connection</p>
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-yellow-500"><ion-icon name="apps" class="text-yellow-500 text-sm mr-2">
+                        </ion-icon>More Application</p>
+                </article>
+                <h5 class="absolute border-b-2 border-b-orange-600 md:border-b-0 top-72 right-28 md:top-24 md:right-32 font-bold md:font-semibold font-tenali text-2xl md:text-5xl text-orange-600">$100.00</h5>
+                <hr class="hidden md:block absolute top-36 right-20 border border-orange-600 w-1/5" />
+                <hr class="hidden md:block absolute top-40 -rotate-[42deg] right-60 border w-10 border-orange-600"/>
+                <img src="img/sw-22.png" alt="Watch 1" class="block absolute top-32 left-0 md:top-12 md:left-16 animate-bounce"/>
+                <ul class="w-56 absolute top-88 right-7 md:top-64 md:right-5 font-semibold font-roboto-mono text-[0.6rem] shadow-sm shadow-slate-400 rounded-lg pl-5 p-2 list-disc opacity-85">
+                    <li class="my-px text-white">Tracking steps, distance, calories burned, and heartbeat</li>
+                    <li class="my-px text-white">Navigate the smartwatch with ease using the intuitive touchscreen.</li>
+                    <li class="my-px text-white">Receive call, text, and app notifications directly on your wrist.</li>
+                </ul>
+            </div>
+            <div class="hidden watch relative" data-watch="SW23">
+                <h2 class="absolute top-10 md:top-5 left-6 md:left-5 font-tenali text-white text-2xl md:text-4xl font-bold p-2 border-b-2 md:border-b-4 border-b-slate-400">IPPLES WATCH A4</h2>
+                <article class="absolute top-56 left-52 md:top-60 md:left-10 font-semibold font-roboto-mono text-[0.5rem] md:text-[0.65rem] opacity-80 md:shadow-sm md:shadow-slate-400 rounded-sm md:rounded-3xl p-1 md:p-3">
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-green-500"><ion-icon name="battery-charging" class="text-green-500 text-sm mr-2"></ion-icon>Fast Charging</p>
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-blue-400"><ion-icon name="water" class="text-blue-400 text-sm mr-2">
+                        </ion-icon>Water Resistant</p>
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-white"><ion-icon name="radio" class="text-white text-sm mr-2"></ion-icon>Wireless Connection</p>
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-yellow-500"><ion-icon name="apps" class="text-yellow-500 text-sm mr-2">
+                        </ion-icon>More Application</p>
+                </article>
+                <h5 class="absolute border-b-2 border-b-orange-600 md:border-b-0 top-72 right-28 md:top-24 md:right-32 font-bold md:font-semibold font-tenali text-2xl md:text-5xl text-orange-600">$124.00</h5>
+                <hr class="hidden md:block absolute top-36 right-20 border border-orange-600 w-1/5" />
+                <hr class="hidden md:block absolute top-40 -rotate-[42deg] right-60 border w-10 border-orange-600"/>
+                <img src="img/sw-23.png" alt="Watch 1" class="block absolute top-32 left-0 md:top-12 md:left-16 animate-bounce"/>
+                <ul class="w-56 absolute top-88 right-7 md:top-64 md:right-5 font-semibold font-roboto-mono text-[0.6rem] shadow-sm shadow-slate-400 rounded-lg pl-5 p-2 list-disc opacity-85">
+                    <li class="my-px text-white">Tracking steps, distance, calories burned, and heartbeat</li>
+                    <li class="my-px text-white">Navigate the smartwatch with ease using the intuitive touchscreen.</li>
+                    <li class="my-px text-white">Receive call, text, and app notifications directly on your wrist.</li>
+                </ul>
+            </div>
+            <div class="hidden watch relative" data-watch="SW24">
+                <h2 class="absolute top-10 md:top-5 left-6 md:left-5 font-tenali text-white text-2xl md:text-4xl font-bold p-2 border-b-2 md:border-b-4 border-b-slate-400">SMARTWATCH ULTRACORE 256 I</h2>
+                <article class="absolute top-56 left-52 md:top-60 md:left-10 font-semibold font-roboto-mono text-[0.5rem] md:text-[0.65rem] opacity-80 md:shadow-sm md:shadow-slate-400 rounded-sm md:rounded-3xl p-1 md:p-3">
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-green-500"><ion-icon name="battery-charging" class="text-green-500 text-sm mr-2"></ion-icon>Fast Charging</p>
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-blue-400"><ion-icon name="water" class="text-blue-400 text-sm mr-2">
+                        </ion-icon>Water Resistant</p>
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-white"><ion-icon name="radio" class="text-white text-sm mr-2"></ion-icon>Wireless Connection</p>
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-yellow-500"><ion-icon name="apps" class="text-yellow-500 text-sm mr-2">
+                        </ion-icon>More Application</p>
+                </article>
+                <h5 class="absolute border-b-2 border-b-orange-600 md:border-b-0 top-72 right-28 md:top-24 md:right-32 font-bold md:font-semibold font-tenali text-2xl md:text-5xl text-orange-600">$200.00</h5>
+                <hr class="hidden md:block absolute top-36 right-20 border border-orange-600 w-1/5" />
+                <hr class="hidden md:block absolute top-40 -rotate-[42deg] right-60 border w-10 border-orange-600"/>
+                <img src="img/sw-24.png" alt="Watch 1" class="block absolute top-32 left-0 md:top-12 md:left-16 animate-bounce"/>
+                <ul class="w-56 absolute top-88 right-7 md:top-64 md:right-5 font-semibold font-roboto-mono text-[0.6rem] shadow-sm shadow-slate-400 rounded-lg pl-5 p-2 list-disc opacity-85">
+                    <li class="my-px text-white">Tracking steps, distance, calories burned, and heartbeat</li>
+                    <li class="my-px text-white">Navigate the smartwatch with ease using the intuitive touchscreen.</li>
+                    <li class="my-px text-white">Receive call, text, and app notifications directly on your wrist.</li>
+                </ul>
+            </div>
+           
+            
+            <aside class="absolute bottom-44 md:bottom-7 md:left-1/4 md:bg-yellow-400/60 rounded-lg md:rounded-full md:w-1/2 md:px-2 md:flex md:flex-row md:justify-center md:gap-3 md:opacity-80">
+                <a href="#watch_content" class="button" data-target="SW21"
+                ><img src="img/sw-21.png" alt="Smartwatch 1" class="choosed w-16 md:w-28 my-4 animate-pulse md:my-0"
                 /></a>
-                <a href="#watch_content" class="button" data-target="SW13"
-                    ><img src="img/sw-23.png" alt="Smartwatch 3" class="w-8 md:w-28"
+                <a href="#watch_content" class="button" data-target="SW22"
+                ><img src="img/sw-22.png" alt="Smartwatch 2" class="w-16 md:w-28 my-4 animate-pulse md:my-0"
                 /></a>
-                <a href="#watch_content" class="button" data-target="SW14"
-                    ><img src="img/sw-24.png" alt="Smartwatch 4" class="w-8 md:w-28"
+                <a href="#watch_content" class="button" data-target="SW23"
+                ><img src="img/sw-23.png" alt="Smartwatch 3" class="w-16 md:w-28 my-4 animate-pulse md:my-0"
                 /></a>
-            </aside>
+                <a href="#watch_content" class="button" data-target="SW24"
+                ><img src="img/sw-24.png" alt="Smartwatch 4" class="w-16 md:w-28 my-4 animate-pulse md:my-0"
+                /></a>
+            </aside>  
+        </section> 
+        <section class="relative top-[15%] w-[92%] h-3/4 px-4 mx-auto shadow-sm shadow-white md:w-2/3 md:h-[85%] md:top-0">
+            <div class="watch relative" data-watch="SW31">
+                <h2 class="absolute top-10 md:top-5 left-6 md:left-5 font-tenali text-white text-2xl md:text-4xl font-bold p-2 border-b-2 md:border-b-4 border-b-slate-400">OPPO SMARTWATCH V11</h2>
+                <article class="absolute top-56 left-52 md:top-60 md:left-10 font-semibold font-roboto-mono text-[0.5rem] md:text-[0.65rem] opacity-80 md:shadow-sm md:shadow-slate-400 rounded-sm md:rounded-3xl p-1 md:p-3">
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-green-500"><ion-icon name="battery-charging" class="text-green-500 text-sm mr-2"></ion-icon>Fast Charging</p>
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-blue-400"><ion-icon name="water" class="text-blue-400 text-sm mr-2">
+                        </ion-icon>Water Resistant</p>
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-white"><ion-icon name="radio" class="text-white text-sm mr-2"></ion-icon>Wireless Connection</p>
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-yellow-500"><ion-icon name="apps" class="text-yellow-500 text-sm mr-2">
+                        </ion-icon>More Application</p>
+                </article>
+                <h5 class="absolute border-b-2 border-b-orange-600 md:border-b-0 top-72 right-28 md:top-24 md:right-32 font-bold md:font-semibold font-tenali text-2xl md:text-5xl text-orange-600">$28.00</h5>
+                <hr class="hidden md:block absolute top-36 right-20 border border-orange-600 w-1/5" />
+                <hr class="hidden md:block absolute top-40 -rotate-[42deg] right-60 border w-10 border-orange-600"/>
+                <img src="img/sw-31.png" alt="Watch 1" class="block absolute top-32 left-0 md:top-12 md:left-16 animate-bounce"/>
+                <ul class="w-56 absolute top-88 right-7 md:top-64 md:right-5 font-semibold font-roboto-mono text-[0.6rem] shadow-sm shadow-slate-400 rounded-lg pl-5 p-2 list-disc opacity-85">
+                    <li class="my-px text-white">Tracking steps, distance, calories burned, and heartbeat</li>
+                    <li class="my-px text-white">Navigate the smartwatch with ease using the intuitive touchscreen.</li>
+                    <li class="my-px text-white">Receive call, text, and app notifications directly on your wrist.</li>
+                </ul>
+            </div>
+            <div class="hidden watch relative" data-watch="SW32">
+                <h2 class="absolute top-10 md:top-5 left-6 md:left-5 font-tenali text-white text-2xl md:text-4xl font-bold p-2 border-b-2 md:border-b-4 border-b-slate-400">ULTRA RENOVS 31A</h2>
+                <article class="absolute top-56 left-52 md:top-60 md:left-10 font-semibold font-roboto-mono text-[0.5rem] md:text-[0.65rem] opacity-80 md:shadow-sm md:shadow-slate-400 rounded-sm md:rounded-3xl p-1 md:p-3">
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-green-500"><ion-icon name="battery-charging" class="text-green-500 text-sm mr-2"></ion-icon>Fast Charging</p>
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-blue-400"><ion-icon name="water" class="text-blue-400 text-sm mr-2">
+                        </ion-icon>Water Resistant</p>
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-white"><ion-icon name="radio" class="text-white text-sm mr-2"></ion-icon>Wireless Connection</p>
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-yellow-500"><ion-icon name="apps" class="text-yellow-500 text-sm mr-2">
+                        </ion-icon>More Application</p>
+                </article>
+                <h5 class="absolute border-b-2 border-b-orange-600 md:border-b-0 top-72 right-28 md:top-24 md:right-32 font-bold md:font-semibold font-tenali text-2xl md:text-5xl text-orange-600">$50.00</h5>
+                <hr class="hidden md:block absolute top-36 right-20 border border-orange-600 w-1/5" />
+                <hr class="hidden md:block absolute top-40 -rotate-[42deg] right-60 border w-10 border-orange-600"/>
+                <img src="img/sw-32.png" alt="Watch 1" class="block absolute top-32 left-0 md:top-12 md:left-16 animate-bounce"/>
+                <ul class="w-56 absolute top-88 right-7 md:top-64 md:right-5 font-semibold font-roboto-mono text-[0.6rem] shadow-sm shadow-slate-400 rounded-lg pl-5 p-2 list-disc opacity-85">
+                    <li class="my-px text-white">Tracking steps, distance, calories burned, and heartbeat</li>
+                    <li class="my-px text-white">Navigate the smartwatch with ease using the intuitive touchscreen.</li>
+                    <li class="my-px text-white">Receive call, text, and app notifications directly on your wrist.</li>
+                </ul>
+            </div>
+            <div class="hidden watch relative" data-watch="SW33">
+                <h2 class="absolute top-10 md:top-5 left-6 md:left-5 font-tenali text-white text-2xl md:text-4xl font-bold p-2 border-b-2 md:border-b-4 border-b-slate-400">SMARTWATCH OPPO PREM4</h2>
+                <article class="absolute top-56 left-52 md:top-60 md:left-10 font-semibold font-roboto-mono text-[0.5rem] md:text-[0.65rem] opacity-80 md:shadow-sm md:shadow-slate-400 rounded-sm md:rounded-3xl p-1 md:p-3">
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-green-500"><ion-icon name="battery-charging" class="text-green-500 text-sm mr-2"></ion-icon>Fast Charging</p>
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-blue-400"><ion-icon name="water" class="text-blue-400 text-sm mr-2">
+                        </ion-icon>Water Resistant</p>
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-white"><ion-icon name="radio" class="text-white text-sm mr-2"></ion-icon>Wireless Connection</p>
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-yellow-500"><ion-icon name="apps" class="text-yellow-500 text-sm mr-2">
+                        </ion-icon>More Application</p>
+                </article>
+                <h5 class="absolute border-b-2 border-b-orange-600 md:border-b-0 top-72 right-28 md:top-24 md:right-32 font-bold md:font-semibold font-tenali text-2xl md:text-5xl text-orange-600">$55.00</h5>
+                <hr class="hidden md:block absolute top-36 right-20 border border-orange-600 w-1/5" />
+                <hr class="hidden md:block absolute top-40 -rotate-[42deg] right-60 border w-10 border-orange-600"/>
+                <img src="img/sw-33.png" alt="Watch 1" class="block absolute top-32 left-0 md:top-12 md:left-16 animate-bounce"/>
+                <ul class="w-56 absolute top-88 right-7 md:top-64 md:right-5 font-semibold font-roboto-mono text-[0.6rem] shadow-sm shadow-slate-400 rounded-lg pl-5 p-2 list-disc opacity-85">
+                    <li class="my-px text-white">Tracking steps, distance, calories burned, and heartbeat</li>
+                    <li class="my-px text-white">Navigate the smartwatch with ease using the intuitive touchscreen.</li>
+                    <li class="my-px text-white">Receive call, text, and app notifications directly on your wrist.</li>
+                </ul>
+            </div>
+            <div class="hidden watch relative" data-watch="SW34">
+                <h2 class="absolute top-10 md:top-5 left-6 md:left-5 font-tenali text-white text-2xl md:text-4xl font-bold p-2 border-b-2 md:border-b-4 border-b-slate-400">OPPO SW RSERIES 5.0</h2>
+                <article class="absolute top-56 left-52 md:top-60 md:left-10 font-semibold font-roboto-mono text-[0.5rem] md:text-[0.65rem] opacity-80 md:shadow-sm md:shadow-slate-400 rounded-sm md:rounded-3xl p-1 md:p-3">
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-green-500"><ion-icon name="battery-charging" class="text-green-500 text-sm mr-2"></ion-icon>Fast Charging</p>
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-blue-400"><ion-icon name="water" class="text-blue-400 text-sm mr-2">
+                        </ion-icon>Water Resistant</p>
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-white"><ion-icon name="radio" class="text-white text-sm mr-2"></ion-icon>Wireless Connection</p>
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-yellow-500"><ion-icon name="apps" class="text-yellow-500 text-sm mr-2">
+                        </ion-icon>More Application</p>
+                </article>
+                <h5 class="absolute border-b-2 border-b-orange-600 md:border-b-0 top-72 right-28 md:top-24 md:right-32 font-bold md:font-semibold font-tenali text-2xl md:text-5xl text-orange-600">$111.00</h5>
+                <hr class="hidden md:block absolute top-36 right-20 border border-orange-600 w-1/5" />
+                <hr class="hidden md:block absolute top-40 -rotate-[42deg] right-60 border w-10 border-orange-600"/>
+                <img src="img/sw-34.png" alt="Watch 1" class="block absolute top-32 left-0 md:top-12 md:left-16 animate-bounce"/>
+                <ul class="w-56 absolute top-88 right-7 md:top-64 md:right-5 font-semibold font-roboto-mono text-[0.6rem] shadow-sm shadow-slate-400 rounded-lg pl-5 p-2 list-disc opacity-85">
+                    <li class="my-px text-white">Tracking steps, distance, calories burned, and heartbeat</li>
+                    <li class="my-px text-white">Navigate the smartwatch with ease using the intuitive touchscreen.</li>
+                    <li class="my-px text-white">Receive call, text, and app notifications directly on your wrist.</li>
+                </ul>
+            </div>
+           
+            
+            <aside class="absolute bottom-44 md:bottom-7 md:left-1/4 md:bg-yellow-400/60 rounded-lg md:rounded-full md:w-1/2 md:px-2 md:flex md:flex-row md:justify-center md:gap-3 md:opacity-80">
+                <a href="#watch_content" class="button" data-target="SW31"
+                ><img src="img/sw-31.png" alt="Smartwatch 1" class="choosed w-16 md:w-28 my-4 animate-pulse md:my-0"
+                /></a>
+                <a href="#watch_content" class="button" data-target="SW32"
+                ><img src="img/sw-32.png" alt="Smartwatch 2" class="w-16 md:w-28 my-4 animate-pulse md:my-0"
+                /></a>
+                <a href="#watch_content" class="button" data-target="SW33"
+                ><img src="img/sw-33.png" alt="Smartwatch 3" class="w-16 md:w-28 my-4 animate-pulse md:my-0"
+                /></a>
+                <a href="#watch_content" class="button" data-target="SW34"
+                ><img src="img/sw-34.png" alt="Smartwatch 4" class="w-16 md:w-28 my-4 animate-pulse md:my-0"
+                /></a>
+            </aside>  
+        </section> 
+        <section class="relative top-[15%] w-[92%] h-3/4 px-4 mx-auto shadow-sm shadow-white md:w-2/3 md:h-[85%] md:top-0">
+            <div class="watch relative" data-watch="SW41">
+                <h2 class="absolute top-10 md:top-5 left-6 md:left-5 font-tenali text-white text-2xl md:text-4xl font-bold p-2 border-b-2 md:border-b-4 border-b-slate-400">VIVO PRE 1HF1</h2>
+                <article class="absolute top-56 left-52 md:top-60 md:left-10 font-semibold font-roboto-mono text-[0.5rem] md:text-[0.65rem] opacity-80 md:shadow-sm md:shadow-slate-400 rounded-sm md:rounded-3xl p-1 md:p-3">
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-green-500"><ion-icon name="battery-charging" class="text-green-500 text-sm mr-2"></ion-icon>Fast Charging</p>
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-blue-400"><ion-icon name="water" class="text-blue-400 text-sm mr-2">
+                        </ion-icon>Water Resistant</p>
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-white"><ion-icon name="radio" class="text-white text-sm mr-2"></ion-icon>Wireless Connection</p>
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-orange-400"><ion-icon name="person-circle" class="text-orange-400 text-sm mr-2">
+                        </ion-icon>User Responsive</p>
+                </article>
+                <h5 class="absolute border-b-2 border-b-orange-600 md:border-b-0 top-72 right-28 md:top-24 md:right-32 font-bold md:font-semibold font-tenali text-2xl md:text-5xl text-orange-600">$88.00</h5>
+                <hr class="hidden md:block absolute top-36 right-20 border border-orange-600 w-1/5" />
+                <hr class="hidden md:block absolute top-40 -rotate-[42deg] right-60 border w-10 border-orange-600"/>
+                <img src="img/sw-41.png" alt="Watch 1" class="block absolute top-32 left-0 md:top-12 md:left-20 animate-bounce"/>
+                <ul class="w-56 absolute top-88 right-7 md:top-64 md:right-5 font-semibold font-roboto-mono text-[0.6rem] shadow-sm shadow-slate-400 rounded-lg pl-5 p-2 list-disc opacity-85">
+                    <li class="my-px text-white">Tracking steps, distance, calories burned, and heartbeat</li>
+                    <li class="my-px text-white">Navigate the smartwatch with ease using the intuitive touchscreen.</li>
+                    <li class="my-px text-white">Receive call, text, and app notifications directly on your wrist.</li>
+                </ul>
+            </div>
+            <div class="hidden watch relative" data-watch="SW42">
+                <h2 class="absolute top-10 md:top-5 left-6 md:left-5 font-tenali text-white text-2xl md:text-4xl font-bold p-2 border-b-2 md:border-b-4 border-b-slate-400">VIVO SWV ULTRA3</h2>
+                <article class="absolute top-56 left-52 md:top-60 md:left-10 font-semibold font-roboto-mono text-[0.5rem] md:text-[0.65rem] opacity-80 md:shadow-sm md:shadow-slate-400 rounded-sm md:rounded-3xl p-1 md:p-3">
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-green-500"><ion-icon name="battery-charging" class="text-green-500 text-sm mr-2"></ion-icon>Fast Charging</p>
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-blue-400"><ion-icon name="water" class="text-blue-400 text-sm mr-2">
+                        </ion-icon>Water Resistant</p>
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-white"><ion-icon name="radio" class="text-white text-sm mr-2"></ion-icon>Wireless Connection</p>
+                </article>
+                <h5 class="absolute border-b-2 border-b-orange-600 md:border-b-0 top-72 right-28 md:top-24 md:right-32 font-bold md:font-semibold font-tenali text-2xl md:text-5xl text-orange-600">$102.00</h5>
+                <hr class="hidden md:block absolute top-36 right-20 border border-orange-600 w-1/5" />
+                <hr class="hidden md:block absolute top-40 -rotate-[42deg] right-60 border w-10 border-orange-600"/>
+                <img src="img/sw-42.png" alt="Watch 1" class="block absolute top-32 left-0 md:top-12 md:left-16 animate-bounce"/>
+                <ul class="w-56 absolute top-88 right-7 md:top-64 md:right-5 font-semibold font-roboto-mono text-[0.6rem] shadow-sm shadow-slate-400 rounded-lg pl-5 p-2 list-disc opacity-85">
+                    <li class="my-px text-white">Tracking steps, distance, calories burned, and heartbeat</li>
+                    <li class="my-px text-white">Navigate the smartwatch with ease using the intuitive touchscreen.</li>
+                    <li class="my-px text-white">Receive call, text, and app notifications directly on your wrist.</li>
+                </ul>
+            </div>
+            <div class="hidden watch relative" data-watch="SW43">
+                <h2 class="absolute top-10 md:top-5 left-6 md:left-5 font-tenali text-white text-2xl md:text-4xl font-bold p-2 border-b-2 md:border-b-4 border-b-slate-400">SMARTWATCH PREMI 3A</h2>
+                <article class="absolute top-56 left-52 md:top-60 md:left-10 font-semibold font-roboto-mono text-[0.5rem] md:text-[0.65rem] opacity-80 md:shadow-sm md:shadow-slate-400 rounded-sm md:rounded-3xl p-1 md:p-3">
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-green-500"><ion-icon name="battery-charging" class="text-green-500 text-sm mr-2"></ion-icon>Fast Charging</p>
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-blue-400"><ion-icon name="water" class="text-blue-400 text-sm mr-2">
+                        </ion-icon>Water Resistant</p>
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-white"><ion-icon name="radio" class="text-white text-sm mr-2"></ion-icon>Wireless Connection</p>
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-yellow-500"><ion-icon name="apps" class="text-yellow-500 text-sm mr-2">
+                        </ion-icon>More Application</p>
+                </article>
+                <h5 class="absolute border-b-2 border-b-orange-600 md:border-b-0 top-72 right-28 md:top-24 md:right-32 font-bold md:font-semibold font-tenali text-2xl md:text-5xl text-orange-600">$155.00</h5>
+                <hr class="hidden md:block absolute top-36 right-20 border border-orange-600 w-1/5" />
+                <hr class="hidden md:block absolute top-40 -rotate-[42deg] right-60 border w-10 border-orange-600"/>
+                <img src="img/sw-43.png" alt="Watch 1" class="block absolute top-32 left-0 md:top-12 md:left-16 animate-bounce"/>
+                <ul class="w-56 absolute top-88 right-7 md:top-64 md:right-5 font-semibold font-roboto-mono text-[0.6rem] shadow-sm shadow-slate-400 rounded-lg pl-5 p-2 list-disc opacity-85">
+                    <li class="my-px text-white">Tracking steps, distance, calories burned, and heartbeat</li>
+                    <li class="my-px text-white">Navigate the smartwatch with ease using the intuitive touchscreen.</li>
+                    <li class="my-px text-white">Receive call, text, and app notifications directly on your wrist.</li>
+                </ul>
+            </div>
+            <div class="hidden watch relative" data-watch="SW44">
+                <h2 class="absolute top-10 md:top-5 left-6 md:left-5 font-tenali text-white text-2xl md:text-4xl font-bold p-2 border-b-2 md:border-b-4 border-b-slate-400">VIVO SWSERIES V3</h2>
+                <article class="absolute top-56 left-52 md:top-60 md:left-10 font-semibold font-roboto-mono text-[0.5rem] md:text-[0.65rem] opacity-80 md:shadow-sm md:shadow-slate-400 rounded-sm md:rounded-3xl p-1 md:p-3">
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-green-500"><ion-icon name="battery-charging" class="text-green-500 text-sm mr-2"></ion-icon>Fast Charging</p>
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-white"><ion-icon name="radio" class="text-white text-sm mr-2"></ion-icon>Wireless Connection</p>
+                    <p class="md:my-px flex items-center md:justify-start justify-center text-yellow-500"><ion-icon name="apps" class="text-yellow-500 text-sm mr-2">
+                        </ion-icon>More Compatible</p>
+                </article>
+                <h5 class="absolute border-b-2 border-b-orange-600 md:border-b-0 top-72 right-28 md:top-24 md:right-32 font-bold md:font-semibold font-tenali text-2xl md:text-5xl text-orange-600">$45.00</h5>
+                <hr class="hidden md:block absolute top-36 right-20 border border-orange-600 w-1/5" />
+                <hr class="hidden md:block absolute top-40 -rotate-[42deg] right-60 border w-10 border-orange-600"/>
+                <img src="img/sw-44.png" alt="Watch 1" class="block absolute top-32 left-0 md:top-12 md:left-16 animate-bounce"/>
+                <ul class="w-56 absolute top-88 right-7 md:top-64 md:right-5 font-semibold font-roboto-mono text-[0.6rem] shadow-sm shadow-slate-400 rounded-lg pl-5 p-2 list-disc opacity-85">
+                    <li class="my-px text-white">Tracking steps, distance, calories burned, and heartbeat</li>
+                    <li class="my-px text-white">Navigate the smartwatch with ease using the intuitive touchscreen.</li>
+                    <li class="my-px text-white">Receive call, text, and app notifications directly on your wrist.</li>
+                </ul>
+            </div>
+           
+            
+            <aside class="absolute bottom-44 md:bottom-7 md:left-1/4 md:bg-yellow-400/60 rounded-lg md:rounded-full md:w-1/2 md:px-2 md:flex md:flex-row md:justify-center md:gap-3 md:opacity-80">
+                <a href="#watch_content" class="button" data-target="SW41"
+                ><img src="img/sw-41.png" alt="Smartwatch 1" class="choosed w-16 md:w-28 my-4 animate-pulse md:my-0"
+                /></a>
+                <a href="#watch_content" class="button" data-target="SW42"
+                ><img src="img/sw-42.png" alt="Smartwatch 2" class="w-16 md:w-28 my-4 animate-pulse md:my-0"
+                /></a>
+                <a href="#watch_content" class="button" data-target="SW43"
+                ><img src="img/sw-43.png" alt="Smartwatch 3" class="w-16 md:w-28 my-4 animate-pulse md:my-0"
+                /></a>
+                <a href="#watch_content" class="button" data-target="SW44"
+                ><img src="img/sw-44.png" alt="Smartwatch 4" class="w-16 md:w-28 my-4 animate-pulse md:my-0"
+                /></a>
+            </aside>  
+        </section> 
+    </div>
+    <div class="px-4 flex top-0 left-0">
+        <div class="my-auto w-full flex justify-between">
+            <button onclick="prevSlide()" class="p-3 rounded-full bg-white opacity-90"><ion-icon name="arrow-back-circle-outline"></ion-icon></button>
+            <button onclick="nextSlide()" class="p-3 rounded-full bg-white opacity-90"><ion-icon name="arrow-forward-circle-outline"></ion-icon> </button>
         </div>
-        <div class="mt-8 w-1/2 pt-2 pb-4 px-4 mx-auto shadow-lg shadow-blue-400">
-            <main id="smartwatch"></main>
-            <img src="img/sw-31.png" alt="Watch 1" class="watch mt-16 animate-bounce mx-auto" data-watch="SW11">
-            <img src="img/sw-32.png" alt="Watch 2" class="watch hidden mt-16 animate-bounce mx-auto" data-watch="SW12">
-            <img src="img/sw-33.png" alt="Watch 3" class="watch hidden mt-16 animate-bounce mx-auto" data-watch="SW13">
-            <img src="img/sw-34.png" alt="Watch 4" class="watch hidden mt-16 animate-bounce mx-auto" data-watch="SW14">
-            <aside class="mt-8 flex flex-row justify-center gap-1 md:gap-3 opacity-80">
-                <a href="#watch_content" class="button" data-target="SW11"
-                    ><img src="img/sw-31.png" alt="Smartwatch 1" class="w-8 choosed md:w-28"
-                /></a>          
-                <a href="#watch_content" class="button" data-target="SW12"
-                    ><img src="img/sw-32.png" alt="Smartwatch 2" class="w-8 md:w-28"
-                /></a>
-                <a href="#watch_content" class="button" data-target="SW13"
-                    ><img src="img/sw-33.png" alt="Smartwatch 3" class="w-8 md:w-28"
-                /></a>
-                <a href="#watch_content" class="button" data-target="SW14"
-                    ><img src="img/sw-34.png" alt="Smartwatch 4" class="w-8 md:w-28"
-                /></a>
-            </aside>
-        </div>
-        <div class="mt-8 w-1/2 pt-2 pb-4 px-4 mx-auto shadow-lg shadow-blue-400">
-            <main id="smartwatch"></main>
-            <img src="img/sw-41.png" alt="Watch 1" class="watch mt-16 animate-bounce mx-auto" data-watch="SW11">
-            <img src="img/sw-42.png" alt="Watch 2" class="watch hidden mt-16 animate-bounce mx-auto" data-watch="SW12">
-            <img src="img/sw-43.png" alt="Watch 3" class="watch hidden mt-16 animate-bounce mx-auto" data-watch="SW13">
-            <img src="img/sw-44.png" alt="Watch 4" class="watch hidden mt-16 animate-bounce mx-auto" data-watch="SW14">
-            <aside class="mt-8 flex flex-row justify-center gap-1 md:gap-3 opacity-80">
-                <a href="#watch_content" class="button" data-target="SW11"
-                    ><img src="img/sw-41.png" alt="Smartwatch 1" class="w-8 choosed md:w-28"
-                /></a>          
-                <a href="#watch_content" class="button" data-target="SW12"
-                    ><img src="img/sw-42.png" alt="Smartwatch 2" class="w-8 md:w-28"
-                /></a>
-                <a href="#watch_content" class="button" data-target="SW13"
-                    ><img src="img/sw-43.png" alt="Smartwatch 3" class="w-8 md:w-28"
-                /></a>
-                <a href="#watch_content" class="button" data-target="SW14"
-                    ><img src="img/sw-44.png" alt="Smartwatch 4" class="w-8 md:w-28"
-                /></a>
-            </aside>
-        </div>
-    </section>
-    <!-- End of Watch Content -->
+    </div>
+    <!-- End of Watch Content  -->
+ 
 
     <!-- Footer -->
     <footer class="relative bg-black text-white">
@@ -247,5 +561,39 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script src="script.js"></script>
+    <script>
+        let currentSlide = 1;
+        const watchContentSlide = document.getElementById("watch_content");
+        const totalSlides = watchContentSlide.childElementCount; // 4
+
+        function nextSlide() {
+            if (currentSlide < totalSlides) {
+                currentSlide++;
+                showSlide();
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide > 1) {
+                currentSlide--;
+                showSlide();
+            }
+        }
+
+        function showSlide() {
+            const slides = document.getElementById("watch_content").getElementsByTagName('section');
+            for (let i = 0; i < totalSlides; i++) { //i < 4
+                const element = slides[i];
+                if (i === currentSlide - 1) {
+                    element.classList.remove("hidden"); // Show current slide
+                } else {
+                    element.classList.add("hidden"); // Hide other slides
+                }
+            }
+        }
+
+        // Call showSlide initially to display the first slide
+        showSlide();
+    </script>
 </body>
 </html>

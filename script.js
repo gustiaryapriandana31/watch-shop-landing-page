@@ -36,7 +36,7 @@ buttons.forEach(function (button) {
     let target = this.getAttribute("data-target"); // Mendapatkan target dari data attribute
 
     let watchContent = document.querySelector(
-      `.watch[data-watch="${target}"]`
+      `div.watch[data-watch="${target}"]`
     );
 
     if (watchContent) {

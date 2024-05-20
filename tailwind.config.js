@@ -11,6 +11,7 @@ module.exports = {
         // => @media (min-width: 700px) { ... }
       },
       spacing: {
+        18: "4.5rem",
         22: "5.5rem",
         26: "6.5rem",
         30 : "7.5rem",
@@ -37,6 +38,7 @@ module.exports = {
         poppins: ["Poppins", "sans-serif"],
         "roboto-mono": ["Roboto Mono", "sans-serif"],
         audiowide: ["Audiowide", "sans-serif"],
+        tenali: ["Tenali Ramakrishna", "sans-serif"],
       },
     },
   },
