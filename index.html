@@ -15,23 +15,22 @@
 <body class="overflow-x-hidden h-[1000px] box-sizing-border relative">
     
     <!-- Navigation Bar -->
-    <nav class="absolute top-0 left-0 w-full items-center z-10 text-black bg-white/20">
+    <nav class="fixed top-0 left-0 w-full items-center z-10 text-black bg-white/20">
         <div class="mx-auto">
             <div class="flex justify-between items-center bg-white/10 p-2">
                 <img src="img/hero-image3.png" alt="Logo" class="w-20 h-10">
                 <ion-icon id="menu" name="menu-outline" class="text-2xl text-white sm:hidden"></ion-icon>
-                <div class="hidden mr-4 md:mr-12 sm:block">
+                <div class="hidden mr-4 md:mr-12 sm:block z-[9999px]">
                     <ul class="flex gap-5 md:gap-8 text-slate-400 font-roboto-mono text-sm lg:text-lg lg:gap-20">
-                        <li class="#"><a href="#">Home</a></li>
-                        <li><a href="#watch_features">Features</a></li>
-                        <li><a href="#watch_content">Products</a></li>
-                        <li><a href="#other_products">Releases</a></li>
-                        <li><a href="#watch_about">About</a></li>
+                        <li class="list-none text-white font-bold"><a href="#">Home</a></li>
+                        <li class="list-none text-white font-bold"><a href="#watch_features">Features</a></li>
+                        <li class="list-none text-white font-bold"><a href="#watch_content">Products</a></li>
+                        <li class="list-none text-white font-bold"><a href="#other_products">Releases</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div id="nav-mobile" class="fixed -bottom-2 right-0 left-0 bg-transparent p-3 border-t-[1px] rounded-t-3xl sm:hidden">
+        <div id="nav-mobile" class="fixed -bottom-2 right-0 left-0 bg-slate-500 p-3 border-t-[1px] rounded-t-3xl sm:hidden z-50">
             <ul class="flex justify-evenly gap-8 items-center">
                 <li>
                     <a href="#" class="link flex flex-col justify-center items-center active">
@@ -40,27 +39,21 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#watch_features" class="link flex flex-col justify-center items-center active">
-                        <ion-icon name="settings-outline" class="text-lg text-gray-600"></ion-icon>
-                        <span class="text-gray-600 opacity-40 font-bold text-[10px] font-roboto-mono">Features</span>
+                    <a href="#watch_features" class="link flex flex-col justify-center items-center text-white">
+                        <ion-icon name="settings-outline" class="text-lg "></ion-icon>
+                        <span class=" opacity-40 font-bold text-[10px] font-roboto-mono">Features</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#watch_content" class="link flex flex-col justify-center items-center">
-                        <ion-icon name="chatbox-outline" class="text-lg text-gray-600"></ion-icon>
-                        <span class="text-gray-600 opacity-40 font-bold text-[10px] font-roboto-mono">Contact</span>
+                    <a href="#watch_content" class="link flex flex-col justify-center items-center text-white">
+                        <ion-icon name="chatbox-outline" class="text-lg "></ion-icon>
+                        <span class=" opacity-40 font-bold text-[10px] font-roboto-mono">Products</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#other_products" class="link flex flex-col justify-center items-center">
-                        <ion-icon name="watch-outline" class="text-lg text-gray-600"></ion-icon>
-                        <span class="text-gray-600 opacity-40 font-bold text-[10px] font-roboto-mono">Contact</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#watch_about" class="link flex flex-col justify-center items-center">
-                        <ion-icon name="clipboard-outline" class="text-lg text-gray-600"></ion-icon>
-                        <span class="text-gray-600 opacity-40 font-bold text-[10px] font-roboto-mono">About</span>
+                    <a href="#other_products" class="link flex flex-col justify-center items-center text-white">
+                        <ion-icon name="watch-outline" class="text-lg"></ion-icon>
+                        <span class=" opacity-40 font-bold text-[10px] font-roboto-mono">Releases</span>
                     </a>
                 </li>
             </ul>
@@ -72,9 +65,11 @@
     <section class="md:flex md:flex-row p-2 md:h-screen bg-gradient-to-br from-blue-950 via-slate-700 to-slate-950">
         <div class="relative z-20 opacity-90 grow basis-1/2">
             <h1 class="text-7xl text-white font-bold text-start mt-36 font-serif ml-20 hidden md:block">WATCHERS</h1>
-            <h3 class="fixed w-2/3 ml-14 text-2xl -mt-44 text-orange-400 font-bold text-center font-poppins md:static md:text-start md:text-xl md:mt-2 md:ml-24">Something Which's you want</h3>
-            <p class="text-lg text-white text-justify mt-5 absolute ml-24 hidden md:block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto assumenda quo, ex minima magni veniam modi fugit, rerum molestias eveniet blanditiis repellendus cum adipisci voluptates, quia quisquam cupiditate a necessitatibus.</p>
-
+            <h3 class="w-2/3 ml-14 text-2xl -mt-44 text-orange-400 font-bold text-center font-poppins md:static md:text-start md:text-xl md:mt-2 md:ml-24">Something Which's you want</h3>
+            <p class="text-lg text-white text-justify mt-5 absolute ml-24 hidden md:block">
+                Embrace a Smarter, Healthier Lifestyle with Our Smartwatch
+                Stay connected, informed, and motivated with our feature-packed smartwatch, designed to enhance your everyday life.
+            </p>
             <h1 class="text-watch text-5xl text-white font-bold text-start mt-68 font-serif ml-10 opacity-80 shadow-sm shadow-slate-700 md:hidden">WATCH</h1>
             <h1 class="text-ers text-5xl text-white font-bold text-center mt-4 font-serif ml-8 shadow-sm shadow-slate-700 md:hidden">ERS</h1>
             
@@ -84,10 +79,10 @@
             <hr class="hidden border-t-2 mt-40 absolute top-100 left-0 w-full opacity-30 md:block">
         </div>
 
-        <div class="relative z-10 grow basis-1/2 ">   
+        <div class="relative grow basis-1/2 ">   
             <img src="img/hero-image.png" alt="Watch Hero Image" class="block img-1 fixed bottom-56 -left-12 animate-bounce md:absolute md:-left-24 md:top-40 opacity-85">  
             <img src="img/hero-image2.png" alt="Watch Hero Image" class="img-2 hidden animate-bounce md:absolute md:top-44 md:left-24 md:w-[85%] md:opacity-90 md:block">  
-            <img src="img/hero-image5.png" alt="Watch Hero Image" class="block img-3 fixed z-10 top-56 left-20 animate-bounce md:hidden"> 
+            <img src="img/hero-image5.png" alt="Watch Hero Image" class="block img-3 fixed top-56 left-20 animate-bounce md:hidden"> 
         </div>
     </section>
     <!-- End of Hero Image -->
@@ -104,48 +99,48 @@
         <h2 class="number text-center absolute top-76 left-26 bg-white font-bold text-lg font-poppins w-6 h-6 opacity-95 cursor-pointer hover:scale-125 animate-pulse rounded-full md:top-48 md:left-[40%]" data-target="DESC1">1</h2>
         <article class="hidden description p-4 h-40 absolute top-[34%] z-20 left-0 bg-slate-800 text-white border-2 rounded-lg md:rounded-br-3xl md:w-1/4 md:bg-white md:text-black md:top-12 md:left-48" data-desc="DESC1">
             <h1 class="close cursor-pointer float-right bg-slate-500 w-6 h-6 text-center rounded-full">X</h1>
-            <h4 class="text-center font-bold text-lg mb-2">1. Description</h4>
-            <p class="text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime reiciendis officia perferendis maiores optio nulla ullam quidem est, sit dignissimos.</p>  
+            <h4 class="text-center font-bold text-lg mb-2">1. Simple Power On and Off Button</h4>
+            <p class="text-sm">Navigate your smartwatch with ease using our intuitive power button. The power button's simple design and smooth operation complement.</p>  
         </article>
 
         <!-- Description 2-->
         <h2 class="number text-center absolute bottom-76 left-26 bg-white font-bold text-lg font-poppins w-6 h-6 opacity-95 cursor-pointer hover:scale-125 animate-pulse rounded-full md:top-76 md:left-[40%]" data-target="DESC2">2</h2>
         <article class="hidden description p-4 h-40 absolute top-[34%] z-20 left-0 bg-slate-800 text-white border-2 rounded-lg md:rounded-tr-3xl md:w-1/4 md:bg-white md:text-black md:top-80 md:left-48" data-desc="DESC2">
             <h1 class="close cursor-pointer float-right bg-slate-500 w-6 h-6 text-center rounded-full">X</h1>
-            <h4 class="text-center font-bold text-lg mb-2">2. Description</h4>
-            <p class="text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime reiciendis officia perferendis maiores optio nulla ullam quidem est, sit dignissimos.</p>  
+            <h4 class="text-center font-bold text-lg mb-2">2. Health Sensor</h4>
+            <p class="text-sm">Embrace a healthier lifestyle with our smartwatch's advanced health sensor. Seamlessly track your heart rate, blood oxygen levels,</p>  
         </article>
 
         <!-- Description 3 -->    
         <h2 class="number text-center absolute top-76 right-20 bg-white font-bold text-lg font-poppins w-6 h-6 opacity-95 cursor-pointer hover:scale-125 animate-pulse rounded-full md:top-48 md:right-[40%]" data-target="DESC3">3</h2>
         <article class="hidden description p-4 h-40 absolute top-[34%] z-20 left-0 bg-slate-800 text-white border-2 rounded-lg md:rounded-bl-3xl md:w-1/4 md:bg-white md:text-black md:top-12 md:left-[60%]" data-desc="DESC3">
             <h1 class="close cursor-pointer float-right bg-slate-500 w-6 h-6 text-center rounded-full">X</h1>
-            <h4 class="text-center font-bold text-lg mb-2">3. Description</h4>
-            <p class="text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime reiciendis officia perferendis maiores optio nulla ullam quidem est, sit dignissimos.</p>  
+            <h4 class="text-center font-bold text-lg mb-2">3. Easy to Navigation</h4>
+            <p class="text-sm">Our user-friendly interface allows you to easily access and understand your health data, eliminating any navigation complexities..</p>  
         </article>
         
         <!-- Description 4-->
         <h2 class="number text-center absolute bottom-76 right-20 bg-white font-bold text-lg font-poppins w-6 h-6 opacity-95 cursor-pointer hover:scale-125 animate-pulse rounded-full md:top-76 md:right-[40%]" data-target="DESC4">4</h2>
         <article class="hidden description p-4 h-40 absolute top-[34%] z-20 left-0 bg-slate-800 text-white border-2 rounded-lg md:rounded-tl-3xl md:w-1/4 md:bg-white md:text-black md:top-80 md:left-[60%]" data-desc="DESC4">
             <h1 class="close cursor-pointer float-right bg-slate-500 w-6 h-6 text-center rounded-full">X</h1>
-            <h4 class="text-center font-bold text-lg mb-2">4. Description</h4>
-            <p class="text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime reiciendis officia perferendis maiores optio nulla ullam quidem est, sit dignissimos.</p>  
+            <h4 class="text-center font-bold text-lg mb-2">4. Smart Notification</h4>
+            <p class="text-sm">Receive timely alerts and updates directly on your wrist, keeping you connected to what matters most.</p>  
         </article>
 
         <!-- Description 5-->
         <h2 class="number text-center absolute top-60 left-1/2 bg-white font-bold text-lg font-poppins w-6 h-6 opacity-95 cursor-pointer hover:scale-125 animate-pulse rounded-full md:top-20" data-target="DESC5">5</h2>
         <article class="hidden description p-4 h-40 absolute top-[34%] z-20 left-0 bg-slate-800 text-white border-2 rounded-lg md:rounded-bl-3xl md:w-1/4 md:bg-white md:text-black md:top-2 md:left-[53%]" data-desc="DESC5">
             <h1 class="close cursor-pointer float-right bg-slate-500 w-6 h-6 text-center rounded-full">X</h1>
-            <h4 class="text-center font-bold text-lg mb-2">5. Description</h4>
-            <p class="text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime reiciendis officia perferendis maiores optio nulla ullam quidem est, sit dignissimos.</p>  
+            <h4 class="text-center font-bold text-lg mb-2">5. Good Stainless Steel</h4>
+            <p class="text-sm">Stainless steel is renowned for its strength and resilience. It can withstand daily wear and tear, scratches, and even minor impacts, ensuring your watch band looks sharp for years to come.</p>  
         </article>
 
         <!-- Description 6-->
         <h2 class="number text-center absolute top-96 left-1/2 bg-white font-bold text-lg font-poppins w-6 h-6 opacity-95 cursor-pointer hover:scale-125 animate-pulse rounded-full md:top-76" data-target="DESC6">6</h2>
         <article class="hidden description p-4 h-40 absolute top-[34%] z-20 left-0 bg-slate-800 text-white border-2 rounded-lg md:rounded-tl-3xl md:w-1/4 md:bg-white md:text-black md:top-80 md:left-[52%]" data-desc="DESC6">
             <h1 class="close cursor-pointer float-right bg-slate-500 w-6 h-6 text-center rounded-full">X</h1>
-            <h4 class="text-center font-bold text-lg mb-2">6. Description</h4>
-            <p class="text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime reiciendis officia perferendis maiores optio nulla ullam quidem est, sit dignissimos.</p>  
+            <h4 class="text-center font-bold text-lg mb-2">6. Durable Watch Screen</h4>
+            <p class="text-sm">A durable watch screen should be able to withstand scratches from everyday wear and tear, such as bumps against hard surfaces or accidental contact with sharp objects.</p>  
         </article>
     </section>
     <!-- End of Watch Features -->
@@ -552,7 +547,7 @@
     <!-- End of Watch Content  -->
  
     <!-- Other Products -->
-    <div id="other_products" class="max-w-full p-8">
+    <div id="other_products" class="relative max-w-full p-8">
         <section>
             <h1 class="text-3xl md:text-5xl text-white text-center font-bold font-poppins mt-5">
             OTHER PRODUCTS AVAILABLE
@@ -637,10 +632,9 @@
                     Link
                 </li>
                 <li class="my-4 list-none"><a href="#">Home</a></li>
-                <li class="my-4 list-none"><a href="#watch_features"></a>Features</li>
+                <li class="my-4 list-none"><a href="#watch_features">Features</a></li>
                 <li class="my-4 list-none"><a href="#watch_content">Products</a></li>
                 <li class="my-4 list-none"><a href="#other_products">Releases</a></li>
-                <li class="my-4 list-none"><a href="#watch_about">About</a></li>
             </div>
             <div class="mb-4 block md:mb-0">
                 <h2 class="text-[22px] font-semibold text-orange-500 py-2 uppercase">Contact</h2>
@@ -648,7 +642,7 @@
                 <p class="text-[16px] my-4">0822 8196 3857</p>
             </div>
         </div>
-        <div class="text-center text-sm py-4 bg-slate-800 border-t-2 border-orange-500 md:text-lg">
+        <div class="text-center text-sm py-4 bg-grey-950 border-t-2 border-orange-500 md:text-lg">
             <p>&copy; 2024 WatChers. Arya Priandana . All rights reserved.</p>
     </footer>
     <!-- End of Footer -->

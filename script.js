@@ -1,4 +1,4 @@
-// // Parallax Effect
+// Parallax Effect
 const buttonFindYours = document.getElementById("find_yours");
 const textWatch = document.querySelector(".text-watch");
 const textErs = document.querySelector(".text-ers");
@@ -11,6 +11,22 @@ window.onscroll = () => {
   textWatch.style.transform = `translateX(-${y * 1.5}px)`;
   textErs.style.transform = `translateX(${y * 1.5}px)`;
 };
+
+// Control Position Fixed
+// const img1 = document.querySelector(".img-1");
+// const img2 = document.querySelector(".img-3");
+
+// window.onscroll = () => {
+//   let y = window.scrollY;
+
+//   if (y > 400) {
+//     img1.classList.remove("fixed");
+//     img2.classList.remove("fixed");
+//   } else {
+//     img1.classList.add("fixed");
+//     img2.classList.add("fixed");
+//   }
+// }
 
 // Mobile Navigation
 const menu = document.getElementById("menu");
@@ -89,10 +105,10 @@ closeButton.forEach(function (closeB) {
 });
 
 
-const mobileLink = document.querySelectorAll(".link");
-mobileLink.forEach(function (link){
-  link.addEventListener("click", () => {
-    navMobile.classList.remove("active");
-    navMobile.classList.add("active");
-  });
-}) 
+// const mobileLink = document.querySelectorAll(".link");
+// mobileLink.forEach(function (link){
+//   link.addEventListener("click", () => {
+//     navMobile.classList.remove("active");
+//     navMobile.classList.add("active");
+//   });
+// }) 
